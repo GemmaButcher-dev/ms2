@@ -54,13 +54,13 @@ Player and guardian goals are:
  1. As a player I want to test my knowledge of superheroes.
 
    Super Squad provides:
-   * Multiple choice questions to test knowledge.
+    * Multiple choice questions to test knowledge.
 
  2. As a player I want to be able to start a new quiz game.
 
     Super Squad provides:
-    * A start button on the homepage.
-    * By clicking the start button a new game is started and a question is presented to the player.
+     * A start button on the homepage.
+     * By clicking the start button a new game is started and a question is presented to the player.
 
  3. As a player I want to answer multiple choice questions by selecting the correct answer.
 
@@ -99,6 +99,8 @@ Player and guardian goals are:
 ### Design Choices
 
 #### Colour Scheme
+
+ The global colour selection for Super Squad is shown below.
 
 #### Typography
 
@@ -182,7 +184,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
-  * All images are the property of the developer who holds fully copywrite.
+  * All background images were sourced at [freepik](https://www.freepik.com/)
 
 ### Acknowledgements
 
