@@ -51,15 +51,50 @@ The target audience is for all users aged 7 and above or younger children with a
 
 Player and guardian goals are:
 
- * As a player I want to test my knowledge of superheroes.
- * As a player I want to be able to start a new quiz game.
- * As a player I want to answer multiple choice questions by selecting the correct answer.
- * As a player i want immediate feedback to know if i have selected the correct answer or got the answer 
-  incorrect.
- * As a player i want to go to the next question after recieving feedback from the current one so i can        continue to play the quiz.
- * As a player i would like to see my final score at the end of the quiz to know how good my knowledge is.
- * As a player i'd like to be able to restart the quiz to attempt the quiz again and improve my score.
- * As a player i want the quiz to be engaging and fun with relevant images and sound.
+ 1. As a player I want to test my knowledge of superheroes.
+
+   Super Squad provides:
+   * Multiple choice questions to test knowledge.
+
+ 2. As a player I want to be able to start a new quiz game.
+
+    Super Squad provides:
+    * A start button on the homepage.
+    * By clicking the start button a new game is started and a question is presented to the player.
+
+ 3. As a player I want to answer multiple choice questions by selecting the correct answer.
+
+    Super Squad provides:
+     * Multiple answers to each question.
+     * The player can select their answer choice.
+
+ 4. As a player I want immediate feedback to know if I have selected the correct answer or selected a     
+    incorrect answer.
+
+    Super Squad provides:
+     * Displays to the users if their answer was correct or incorrect.
+
+ 5. As a player I want to go to the next question after recieving feedback from the current one so I can   continue to play the quiz.
+
+    Super Squad provides:
+     * A next question button allowing the player to continue with the quiz after recieving feedback.
+
+ 6. As a player i would like to see my final score at the end of the quiz to know how good my knowledge is.
+
+    Super Squad provides:
+     * A score is displayed after answering all questions. 
+     * The score is a total of correct answers scored throughout the quiz game.
+
+ 7. As a player I want to be able to restart the quiz to attempt the quiz again and improve my score.
+
+    Super Squad provides:
+     * There is a restart button  in the game area on the homepage.
+     * On selecting the restart button a new quiz game is started from the firdt question.
+
+ 8. As a player i want the quiz to be engaging and fun with relevant images and sound.
+
+    Super Squad provides:
+     * Images relevant to a superhero theme.
 
 ### Design Choices
 
