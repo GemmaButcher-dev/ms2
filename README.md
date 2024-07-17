@@ -45,7 +45,21 @@ Welcome to
 
 #### Project Goals
 
+The target audience is for all users aged 7 and above or younger children with a Knowledge and interest in learning about superheros.
+
 #### Player Goals
+
+Player and guardian goals are:
+
+ * As a player I want to test my knowledge of superheroes.
+ * As a player I want to be able to start a new quiz game.
+ * As a player I want to answer multiple choice questions by selecting the correct answer.
+ * As a player i want immediate feedback to know if i have selected the correct answer or got the answer 
+  incorrect.
+ * As a player i want to go to the next question after recieving feedback from the current one so i can        continue to play the quiz.
+ * As a player i would like to see my final score at the end of the quiz to know how good my knowledge is.
+ * As a player i'd like to be able to restart the quiz to attempt the quiz again and improve my score.
+ * As a player i want the quiz to be engaging and fun with relevant images and sound.
 
 ### Design Choices
 
