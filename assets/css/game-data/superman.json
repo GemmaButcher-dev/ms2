@@ -1,0 +1,52 @@
+[
+    {
+     "question": "What is Superman's birth name?",
+    "answers": [
+        "Clark Kent",
+        "Kal-El",
+        "Jor-El",
+        "Lex Luthor"
+    ],
+    "correctAnswer": "Kal-El"
+    },
+    {
+     "question": "Which planet is Superman from?",
+    "answers": [
+        "Mars",
+        "Earth",
+        "Krypton",
+        "Venus"
+    ],
+    "correctAnswer": "Krypton"
+    },
+    {
+     "question": "What is the name of Superman's alter ego on Earth?",
+    "answers": [
+        "Bruce Wayne",
+        "Peter Parker",
+        "Tony Stark",
+        "Clark Kent"
+    ],
+    "correctAnswer": "Clark Kent"
+    },
+    {
+     "question": "Who is Superman's arch-nemesis?",
+       "answers": [
+           "The Joker",
+           "Lex Luthor",
+           "Green Goblin",
+           "Thanos"
+       ],
+       "correctAnswer": "Lex Luthor"
+       },
+       {
+        "question": "What is the name of Superman's home city on Earth?",
+          "answers": [
+              "Gotham City",
+              "Metropolis",
+              "Central City",
+              "Star City"
+          ],
+          "correctAnswer": "Metropolis"
+        },
+]
