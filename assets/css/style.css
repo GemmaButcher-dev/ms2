@@ -18,8 +18,8 @@
  *  5.5 - About
  *  5.6 - Error (404)
  *  6.0 - Results
- *  6.1 - Modal
- *  6.2 - Timer
+ *  6.1 - Timer
+ *  6.2 - Modal
  *  6.3 - Key Frames
  *  6.4 - Alerts
  *  6.5 - Buttons
@@ -51,13 +51,6 @@ h2 {
 main {
     flex-grow: 1;
     overflow: hidden;
-}
-
-.welcome-container {
-}
-
-.welcome-image {
-   
 }
 
 /* #3.0 - Header =================================== */
@@ -99,5 +92,49 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+/* #5.1 - home & quiz =================================== */
+
+.welcome-hidden {
+    display: none;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
+.welcome-img {
+    object-fit: contain;
+}
+
+/*game area*/
+
+#game-area {
+    color: blueviolet;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-area div {
+    text-align: center;
+}
+
+/* #6.1 - Timer =================================== */
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    text-align: center;
+}
+
+/* #6.1 - Modal =================================== */
 
 
