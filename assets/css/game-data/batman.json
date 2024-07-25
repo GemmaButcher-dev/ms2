@@ -1,0 +1,52 @@
+[
+    {
+     "question": "What is Batman's real name?",
+    "answers": [
+        "Bruce Wayne",
+        "Clark Kent",
+        "Peter Parker",
+        "Tony Stark"
+    ],
+    "correctAnswer": "Bruce Wayne"
+    },
+    {
+     "question": "Which city is Batman's home and primary area of operation?",
+    "answers": [
+        "Metropolis",
+        "Gotham City",
+        "Central City",
+        "Central City"
+    ],
+    "correctAnswer": "Gotham City"
+    },
+    {
+     "question": "Who is Batman's loyal butler and confidant?",
+    "answers": [
+        "Alfred Pennyworth",
+        "Jarvis",
+        "Robin",
+        "James Gordon"
+    ],
+    "correctAnswer": "Alfred Pennyworth"
+    },
+    {
+     "question": "Which villain is known as the Clown Prince of Crime and is Batman's arch-nemesis?",
+       "answers": [
+           "The Joker",
+           "The Riddler",
+           "Bane",
+           "Two Faces"
+       ],
+       "correctAnswer": "The Joker"
+       },
+       {
+        "question": "What is the name of Batman's sidekick who later becomes Nightwing?",
+          "answers": [
+              "Jason Todd",
+              "Tim Drake",
+              "Damian Wayne",
+              "Dick Grayson"
+          ],
+          "correctAnswer": "Dick Grayson"
+        },
+]
