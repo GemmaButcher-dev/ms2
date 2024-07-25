@@ -33,11 +33,14 @@
 
 /* #1.1 - Typography =================================== */
 
+/* #1.1 - Backgrounds =================================== */
+
 body {
     background-size: cover;
-    background-image: url("");
+    background-image: url('../images/hulk_background.jpg');
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    background-repeat: no-repeat;
 }
