@@ -1,0 +1,43 @@
+/**
+ *
+ * Index
+ *
+ *  1.0 - General
+ *  1.1 - Typography
+ *  1.2 - Backgrounds
+ *  2.0 - Layout
+ *  3.0 - Header
+ *  4.0 - Footer
+ *  5.0 - Pages
+ *  5.1 - Home
+ *  5.4 - Quiz
+ *  5.5 - About
+ *  5.6 - Error (404)
+ *  6.0 - Results
+ *  6.1 - Modal
+ *  6.2 - Timer
+ *  6.3 - Key Frames
+ *  6.4 - Alerts
+ *  6.5 - Buttons
+ *  6.6 - Sounds
+ *  7.0 - Media Queries
+*/
+
+/* #1.0 - General =================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #1.1 - Typography =================================== */
+
+body {
+    background-size: cover;
+    background-image: url("");
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
