@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/supernova-2');
+
+                
 /**
  *
  * Index
@@ -74,12 +78,16 @@ header {
 }
 
 .logo {
-    font-family: sans-serif;
+    font-family: 'supernova', sans-serif;
     font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    padding-left: 25px;
+    padding-top: 20px;
 }
 
 .logo:hover {
-    color: blueviolet;
+    color: red;
 }
 
 .logo a,
