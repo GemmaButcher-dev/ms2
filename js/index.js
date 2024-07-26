@@ -146,3 +146,19 @@ function arrayShuffle(array) {
 
     return array;
 }
+
+let questionCounter = 0;
+
+//show next question
+function displayNextQuestion() {
+
+    // increase score counter
+    questionCounter++;
+
+    if (questionCounter === 5) {
+        // get next question modal button
+        let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+
+        
+    }
+}
