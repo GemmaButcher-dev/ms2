@@ -7,8 +7,8 @@ let answersCorrect = 0;
 let timer;
 const TIMER_DURATION = 10;
 
-// Declare game shuffling 
-let shuffledGameData;
+// Declare game shuffling iterator
+let shuffledGameDataIterator;
 
 // Get the modal to pop up
 let modal = document.getElementById('answerModal');
@@ -30,6 +30,31 @@ function triviaSuperman() {
     startSuperman.disabled = true;
     startBatman.disabled = true;
     startWonderwoman = true;
+
+    setTimeout(function() {
+        // get data for game
+        fetch('./js/game-data/superman.json')
+
+        //parse JSON data
+        .then(response => response.json())
+
+        //create game by handling parsed data
+        .then(function(game_data) {
+            
+            //set question amount
+            amountOfQuestions = game_data.length;
+
+            //shuffle game data order
+            let shuffledGameData = arrayShuffle([...game_data]);
+
+            // shuffled game data iterator
+            shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+            //show first question
+            displayNextQuestion();
+        }
+    }
+
 }
 
 // start batman game
