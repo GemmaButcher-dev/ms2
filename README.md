@@ -3,7 +3,7 @@ Welcome to
 # 🦸🏻‍♀️ Super Squad 🦸🏼‍♂️
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-[View the live project here!] ()
+[View the live project here!] (https://gemmabutcher-dev.github.io/ms2/)
 
 ## Table of Contents
 1. [UX](#ux)
