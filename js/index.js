@@ -37,3 +37,23 @@ function triviaBatman() {
 function triviaWonderwoman() {
     
 }
+
+// Shuffle arrays element order
+function arrayShuffle(array) {
+
+    //copy of array
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    //while 
+    while (0 !== currentIndex) {
+
+        //pick remaining element...
+        randomIndex = Math.floor(Math.random()* currentIndex);
+        currentIndex -= 1;
+
+        // swap with current element
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+}
