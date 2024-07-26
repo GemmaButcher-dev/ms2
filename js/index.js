@@ -13,3 +13,12 @@ let shuffledGameData;
 // Get the modal to pop up
 let modal = document.getElementById('answerModal');
 let modalMessage = document.getElementById('modal-message');
+
+// Superman mode - game trigger
+let startSuperman = document.getElementById('start-superman');
+
+// batman mode - game trigger
+let startBatman = document.getElementById('start-batman');
+
+// wonderwoman mode - game trigger
+let startWonderwoman = document.getElementById('start-wonderwoman');
