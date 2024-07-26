@@ -201,3 +201,27 @@ function redirectToHome() {
     // Change the current URL to the home page URL
     window.location.href = '/MS2/index.html';
 }
+
+// shuffle answers and create html
+let shuffledAnswers = arrayShuffle([...nextItem.value.answers]);
+let html = generateQuestionHTML(nextItem, shuffledAnswers);
+gameArea.innerHTML = html;
+
+//add event listeners to next question and answer button
+attachAnswerListeners(shuffledAnswers, nextItem);
+
+// Generate HTML for the question and answers
+function generateQuestionHTML(nextItem, shuffledAnswers) {
+
+    // Generate the HTML for the question
+    let html = `<h2>${nextItem.value.question}</h2>`;
+
+    // Generate the HTML for the answers
+    shuffledAnswers.forEach((answer, index) => {
+        html += `<div><input type="radio" id="answer${index}" name="answer" value="${answer}">
+                 <label for="answer${index}">${answer}</label></div>`;
+    });
+
+    // Return the generated HTML
+    return html;
+}
