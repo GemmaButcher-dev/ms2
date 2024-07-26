@@ -22,3 +22,18 @@ let startBatman = document.getElementById('start-batman');
 
 // wonderwoman mode - game trigger
 let startWonderwoman = document.getElementById('start-wonderwoman');
+
+// start superman game
+function triviaSuperman() {
+
+}
+
+// start batman game
+function triviaBatman() {
+    
+}
+
+// start wonderwoman game
+function triviaWonderwoman() {
+    
+}
