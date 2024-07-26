@@ -196,3 +196,8 @@ function displayNextQuestion() {
 
     return;
 }
+
+function redirectToHome() {
+    // Change the current URL to the home page URL
+    window.location.href = '/MS2/index.html';
+}
