@@ -26,15 +26,29 @@ let startWonderwoman = document.getElementById('start-wonderwoman');
 // start superman game
 function triviaSuperman() {
 
+    //disable superman start button
+    startSuperman.disabled = true;
+    startBatman.disabled = true;
+    startWonderwoman = true;
 }
 
 // start batman game
 function triviaBatman() {
+
+    //disable batman start button
+    startSuperman.disabled = true;
+    startBatman.disabled = true;
+    startWonderwoman = true;
     
 }
 
 // start wonderwoman game
 function triviaWonderwoman() {
+
+    //disable wonderwoman start button
+    startSuperman.disabled = true;
+    startBatman.disabled = true;
+    startWonderwoman = true;
     
 }
 
