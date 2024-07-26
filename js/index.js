@@ -64,6 +64,30 @@ function triviaBatman() {
     startSuperman.disabled = true;
     startBatman.disabled = true;
     startWonderwoman = true;
+
+    setTimeout(function() {
+        // get data for game
+        fetch('./js/game-data/batman.json')
+
+        //parse JSON data
+        .then(response => response.json())
+
+        //create game by handling parsed data
+        .then(function(game_data) {
+            
+            //set question amount
+            amountOfQuestions = game_data.length;
+
+            //shuffle game data order
+            let shuffledGameData = arrayShuffle([...game_data]);
+
+            // shuffled game data iterator
+            shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+            //show first question
+            displayNextQuestion();
+        }
+    }
     
 }
 
@@ -74,6 +98,30 @@ function triviaWonderwoman() {
     startSuperman.disabled = true;
     startBatman.disabled = true;
     startWonderwoman = true;
+
+    setTimeout(function() {
+        // get data for game
+        fetch('./js/game-data/wonderwoman.json')
+
+        //parse JSON data
+        .then(response => response.json())
+
+        //create game by handling parsed data
+        .then(function(game_data) {
+            
+            //set question amount
+            amountOfQuestions = game_data.length;
+
+            //shuffle game data order
+            let shuffledGameData = arrayShuffle([...game_data]);
+
+            // shuffled game data iterator
+            shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+            //show first question
+            displayNextQuestion();
+        }
+    }
     
 }
 
@@ -95,4 +143,6 @@ function arrayShuffle(array) {
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
+
+    return array;
 }
