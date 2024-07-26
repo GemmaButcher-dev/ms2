@@ -29,7 +29,7 @@ function triviaSuperman() {
     //disable superman start button
     startSuperman.disabled = true;
     startBatman.disabled = true;
-    startWonderwoman = true;
+    startWonderwoman.disabled = true;
 
     setTimeout(function() {
         // get data for game
@@ -63,7 +63,7 @@ function triviaBatman() {
     //disable batman start button
     startSuperman.disabled = true;
     startBatman.disabled = true;
-    startWonderwoman = true;
+    startWonderwoman.diabled = true;
 
     setTimeout(function() {
         // get data for game
@@ -97,7 +97,7 @@ function triviaWonderwoman() {
     //disable wonderwoman start button
     startSuperman.disabled = true;
     startBatman.disabled = true;
-    startWonderwoman = true;
+    startWonderwoman.disabled = true;
 
     setTimeout(function() {
         // get data for game
