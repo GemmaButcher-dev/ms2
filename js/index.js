@@ -225,3 +225,71 @@ function generateQuestionHTML(nextItem, shuffledAnswers) {
     // Return the generated HTML
     return html;
 }
+
+// Attach event listeners to the possible answers
+function attachAnswerListeners(shuffledAnswers, nextItem) {
+
+    // Attach event listeners to the answers
+    shuffledAnswers.forEach((answer, index) => {
+
+        // Get the answer element
+        let answerElement = document.getElementById(`answer${index}`);
+        answerElement.addEventListener('click', function() {
+            stopTimer();
+
+            // Display the modal with the result of the answer
+            if (answer === nextItem.value.correctAnswer) {
+                // Get the element
+                let background = document.getElementById('modal-content');
+                // Change the background image
+                background.style.backgroundImage = "url('')";
+                answersCorrect++;
+
+                modalMessage.textContent = 'Correct!';
+            } else {
+                // Get the element
+                let background = document.getElementById('modal-content');
+                // Change the background image
+                background.style.backgroundImage = "url('')";
+                modalMessage.textContent = 'Incorrect. The correct answer was ' + nextItem.value.correctAnswer;
+            }
+            modal.style.display = "block";
+        });
+    });
+
+}
+
+// Attach event listener to the next question modal button
+let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+nextQuestionModalButton.addEventListener('click', function() {
+    modal.style.display = "none";
+    displayNextQuestion();
+});
+
+// Start Timer function
+function startTimer() {
+    let timeLeft = TIMER_DURATION;
+    document.getElementById('timer').classList.add('countdown');
+    document.getElementById('timer').textContent = timeLeft;
+
+    timer = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timer').textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            // Get the element
+            let background = document.getElementById('modal-content');
+            // Change the background image
+            background.style.backgroundImage = "url('')";
+            modalMessage.textContent = 'Time is up!';
+            modal.style.display = "block";
+        }
+    }, 1000);
+}
+
+// Stop Timer function
+function stopTimer() {
+    clearInterval(timer);
+    document.getElementById('timer').classList.remove('countdown');
+}
