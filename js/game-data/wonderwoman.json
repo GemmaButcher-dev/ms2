@@ -1,0 +1,52 @@
+[
+    {
+     "question": "What is Wonder Woman's real name?",
+    "answers": [
+        "Diana Prince",
+        "Diana Lane",
+        "Diana Ross",
+        "Diana Queen"
+    ],
+    "correctAnswer": "Diana Prince"
+    },
+    {
+     "question": "Wonder Woman is an Amazonian princess from which fictional island?",
+    "answers": [
+        "Themyscira",
+        "Atlantis",
+        "Olympus",
+        "Skartaris"
+    ],
+    "correctAnswer": "Themyscira"
+    },
+    {
+     "question": "Which goddess granted Wonder Woman her superhuman strength?",
+    "answers": [
+        "Athena",
+        "Hera",
+        "Demeter",
+        "Artemis"
+    ],
+    "correctAnswer": "Demeter"
+    },
+    {
+     "question": "Who is Wonder Woman's mother and queen of the Amazons?",
+       "answers": [
+           "Hippolyta",
+           "Antiope",
+           "Circe",
+           "Hera"
+       ],
+       "correctAnswer": "Hippolyta"
+       },
+       {
+        "question": "What is Wonder Woman's primary weapon?",
+          "answers": [
+              "Sword of Athena",
+              "Trident",
+              "Lasso of Truth",
+              "Shield of Aegis"
+          ],
+          "correctAnswer": "Lasso of Truth"
+        }
+]
