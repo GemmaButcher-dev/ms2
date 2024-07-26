@@ -177,5 +177,22 @@ function displayNextQuestion() {
         stopTimer();
     }
 
-    
+    document.getElementById('timer').textContent = null;
+    gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
+                          <div class='button-container'>
+                              <button id="return-home" type="button" class="game-start" aria-label="button to return to home page">
+                                  Restart Quiz
+                              </button>
+                          </div>`;
+
+    let returnHome = document.getElementById('return-home');
+    returnHome.addEventListener('click', function() {
+        setTimeout(redirectToHome, 2000);
+    });
+
+    returnHome.addEventListener('touchend', function() {
+        setTimeout(redirectToHome, 2000);
+    });
+
+    return;
 }
