@@ -159,6 +159,23 @@ function displayNextQuestion() {
         // get next question modal button
         let nextQuestionModalButton = document.getElementById('next-question-modal-button');
 
-        
+        //change button text
+        nextQuestionModalButton.textContent = "View Results";
     }
+
+    startTimer();
+
+    //get next item from shuffled data iterator
+    let nextItem = shuffledGameDataIterator.next();
+
+    //get element from game area
+    let gameArea = document.getElementById('game-area');
+
+    //display message if finished questions
+    if (nextItem.done) {
+
+        stopTimer();
+    }
+
+    
 }
