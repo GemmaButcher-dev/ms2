@@ -62,6 +62,44 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }, 100);
     }
 
+    // Start Batman game
+    function triviaBatman() {
+        startSuperman.disabled = true;
+        startBatman.disabled = true;
+        startWonderwoman.disabled = true;
+
+        setTimeout(function() {
+            fetch('./js/game-data/batman.json')
+                .then(response => response.json())
+                .then(function(game_data) {
+                    amountOfQuestions = game_data.length;
+                    let shuffledGameData = arrayShuffle([...game_data]);
+                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+                    displayNextQuestion();
+                })
+                .catch(error => console.error('Error fetching game data:', error));
+        }, 100);
+    }
+
+    // Start Wonderwoman game
+    function triviaWonderwoman() {
+        startSuperman.disabled = true;
+        startBatman.disabled = true;
+        startWonderwoman.disabled = true;
+
+        setTimeout(function() {
+            fetch('./js/game-data/wonderwoman.json')
+                .then(response => response.json())
+                .then(function(game_data) {
+                    amountOfQuestions = game_data.length;
+                    let shuffledGameData = arrayShuffle([...game_data]);
+                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+                    displayNextQuestion();
+                })
+                .catch(error => console.error('Error fetching game data:', error));
+        }, 100);
+    }
+
     // Shuffle arrays element order
     function arrayShuffle(array) {
         let currentIndex = array.length, temporaryValue, randomIndex;
@@ -74,15 +112,54 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         return array;
     }
-
+//show next question
     function displayNextQuestion() {
+
+        //increment score counter
+        questionCounter++;
+
+        if (questionCounter === 5) {
+            //get next question button
+            let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+
+            //change button text
+            nextQuestionModalButton.textContent = "See Your Score";
+        }
+
+        startTimer();
+
+        //get next item from shuffled data iterator
         let nextItem = shuffledGameDataIterator.next();
+
+        //get element from game area
+        let gameArea = document.getElementById('game-area');
+
+        //show message when finished questions
         if (nextItem.done) {
-            showResults();
+
+            stopTimer();
+
+            document.getElementById('timer').textContent = null;
+            gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
+                              <img src="${imageSrc}" alt="result image" class="result-image">
+                              <div class='button-container'>
+                                  <button id="return-home" type="button" class="game-start" aria-label="button to return to home page">
+                                      Restart Quiz
+                                  </button>
+                              </div>`;
+
+            let returnHome = document.getElementById('return-home');
+            returnHome.addEventListener('click', function() {
+                setTimeout(redirectToHome, 2000);
+            });
+                      
+            returnHome.addEventListener('touchend', function() {
+            setTimeout(redirectToHome, 2000);
+            });
+            
             return;
         }
 
-        let gameArea = document.getElementById('game-area');
         let questionHTML = generateQuestionHTML(nextItem.value);
         gameArea.innerHTML = questionHTML;
 
