@@ -157,7 +157,7 @@ footer {
   }
   
   .modal-content {
-    background-color: #bfb1b1 !important;
+    background-color: #ffffff !important;
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -184,6 +184,7 @@ footer {
   
   #next-question-modal-button.game-start.modal-game-start {
     top: 60%;
+    color: white;
   }
   
   .modal-game-start {
