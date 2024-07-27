@@ -153,6 +153,7 @@ footer {
     border-radius: 5px;
     width: 50%;
     height: 100%;
+    margin: auto;
   }
   
   .modal-content {
@@ -188,5 +189,3 @@ footer {
   .modal-game-start {
       background-color: #000000;
   }
-
-
