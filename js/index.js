@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Declare Game Variables
+    //Declare Game Variables
     let amountOfQuestions;
     let correctAnswer;
     let answersCorrect = 0;
@@ -17,32 +17,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Batman mode - game trigger
     let startBatman = document.getElementById('start-batman');
 
-    // Wonder Woman mode - game trigger
+    // Wonderwoman mode - game trigger
     let startWonderwoman = document.getElementById('start-wonderwoman');
 
     // Event listeners for buttons
     startSuperman.addEventListener('click', triviaSuperman);
     startBatman.addEventListener('click', triviaBatman);
     startWonderwoman.addEventListener('click', triviaWonderwoman);
-
-    // Question data for each superhero
-    const supermanQuestions = [
-        { question: "What is Superman's real name?", answers: ["Clark Kent", "Bruce Wayne", "Peter Parker", "Tony Stark"], correctAnswer: "Clark Kent" },
-        { question: "Which planet is Superman from?", answers: ["Earth", "Krypton", "Mars", "Venus"], correctAnswer: "Krypton" },
-        // Add more questions as needed
-    ];
-
-    const batmanQuestions = [
-        { question: "What is Batman's real name?", answers: ["Bruce Wayne", "Clark Kent", "Peter Parker", "Tony Stark"], correctAnswer: "Bruce Wayne" },
-        { question: "Which city does Batman protect?", answers: ["Metropolis", "Gotham", "Central City", "Star City"], correctAnswer: "Gotham" },
-        // Add more questions as needed
-    ];
-
-    const wonderwomanQuestions = [
-        { question: "What is Wonder Woman's real name?", answers: ["Diana Prince", "Barbara Gordon", "Natasha Romanoff", "Carol Danvers"], correctAnswer: "Diana Prince" },
-        { question: "Which island is Wonder Woman from?", answers: ["Themyscira", "Atlantis", "Paradise Island", "Skull Island"], correctAnswer: "Themyscira" },
-        // Add more questions as needed
-    ];
 
     // Start Superman game
     function triviaSuperman() {
@@ -51,39 +32,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         startWonderwoman.disabled = true;
 
         setTimeout(function() {
-            startGame(supermanQuestions);
+            fetch('./js/game-data/superman.json')
+                .then(response => response.json())
+                .then(function(game_data) {
+                    amountOfQuestions = game_data.length;
+                    let shuffledGameData = arrayShuffle([...game_data]);
+                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+                    displayNextQuestion();
+                })
+                .catch(error => console.error('Error fetching game data:', error));
         }, 100);
     }
 
-    // Start Batman game
-    function triviaBatman() {
-        startSuperman.disabled = true;
-        startBatman.disabled = true;
-        startWonderwoman.disabled = true;
-
-        setTimeout(function() {
-            startGame(batmanQuestions);
-        }, 100);
-    }
-
-    // Start Wonder Woman game
-    function triviaWonderwoman() {
-        startSuperman.disabled = true;
-        startBatman.disabled = true;
-        startWonderwoman.disabled = true;
-
-        setTimeout(function() {
-            startGame(wonderwomanQuestions);
-        }, 100);
-    }
-
-    // Common function to start game
-    function startGame(gameData) {
-        amountOfQuestions = gameData.length;
-        let shuffledGameData = arrayShuffle([...gameData]);
-        shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
-        displayNextQuestion();
-    }
+    // Similar functions for triviaBatman and triviaWonderwoman...
 
     // Shuffle arrays element order
     function arrayShuffle(array) {
@@ -166,23 +127,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         clearInterval(timer);
         document.getElementById('timer').classList.remove('countdown');
     }
-
-    function showResults() {
-        document.getElementById('timer').textContent = null;
-        let gameArea = document.getElementById('game-area');
-        gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
-                              <div class='button-container'>
-                                  <button id="return-home" type="button" class="game-start" aria-label="button to return to home page">
-                                      Restart Quiz
-                                  </button>
-                              </div>`;
-        let returnHome = document.getElementById('return-home');
-        returnHome.addEventListener('click', function() {
-            setTimeout(redirectToHome, 2000);
-        });
-    }
-
-    function redirectToHome() {
-        window.location.href = '/MS2/index.html';
-    }
-});
+})
