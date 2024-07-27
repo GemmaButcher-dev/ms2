@@ -197,6 +197,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return html;
     }
 
+    //attach answer event listeners
+    function attachAnswerListeners(shuffledAnswers, nextItem) {
+
+        //add answer event listeners
+        shuffledAnswers.forEach ((answer, index) => {
+
+            //get answer Element
+            let answerElement = document.getElementById(`answer${index}`);
+            answerElement.addEventListener('click', function() {
+                stopTimer();
+
+                // show modal with answer result
+                if (answer === nextItem.value.correctAnswer) {
+                    //get element
+                    let background = document.getElementById('modal-content');
+                    //change background image
+                    background.style.backgroundImage = "url('')";
+                    answersCorrect++;
+
+                    modalMessage.textContent = 'Correct!';
+                } else {
+                    //get element
+                    let background = document.getElementById('modal-content');
+                    //change background image
+                    background.style.backgroundImage = "url('')";
+                    modalMessage.textContent = 'Incorrect. The correct answer was ' + nextItem.value.correctAnswer;
+                }
+                modal.style.display = "block";
+            });
+        });
+    }
+  
+
     function generateQuestionHTML(questionData) {
         let html = `<h2>${questionData.question}</h2>`;
         questionData.answers.forEach((answer, index) => {
