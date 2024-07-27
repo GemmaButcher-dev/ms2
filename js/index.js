@@ -229,43 +229,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
   
+    // add event listener to next question modal button
+    let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+    nextQuestionModalButton.addEventListener('click', function() {
+        modal.style.display = "none";
+        displayNextQuestion();
+    });
 
-    function generateQuestionHTML(questionData) {
-        let html = `<h2>${questionData.question}</h2>`;
-        questionData.answers.forEach((answer, index) => {
-            html += `<div><input type="radio" id="answer${index}" name="answer" value="${answer}">
-                     <label for="answer${index}">${answer}</label></div>`;
-        });
-        return html;
-    }
-
-
-
-
-    function attachAnswerListeners(questionData) {
-        questionData.answers.forEach((answer, index) => {
-            let answerElement = document.getElementById(`answer${index}`);
-            answerElement.addEventListener('click', function() {
-                checkAnswer(answer, questionData.correctAnswer);
-            });
-        });
-    }
-
-    function checkAnswer(selectedAnswer, correctAnswer) {
-        stopTimer();
-        if (selectedAnswer === correctAnswer) {
-            answersCorrect++;
-            showModal('Correct!', '');
-        } else {
-            showModal('Incorrect', `The correct answer was ${correctAnswer}`);
-        }
-    }
-
-    function showModal(message, additionalMessage) {
-        modalMessage.textContent = `${message} ${additionalMessage}`;
-        modal.style.display = "block";
-    }
-
+    //start timer function
     function startTimer() {
         let timeLeft = TIMER_DURATION;
         document.getElementById('timer').classList.add('countdown');
@@ -277,7 +248,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             if (timeLeft <= 0) {
                 clearInterval(timer);
-                showModal('Time is up!', '');
+                // get element
+                let background = document.getElementById('modal-content');
+                background.style.backgroundImage =  "url('')";
+                modalMessage.textContent = 'Time is up!';
+                modal.style.display = "block";
             }
         }, 1000);
     }
