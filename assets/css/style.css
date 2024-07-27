@@ -123,6 +123,29 @@ footer {
     text-align: center;
 }
 
+#game-area h2,
+.countdown {
+  color: black;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.game-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: red;
+    color: white;
+    z-index: 1;
+    position:relative;
+    outline: none;
+    overflow:hidden;
+    cursor: pointer;
+}
+
 /* #6.1 - Timer =================================== */
 
 #timer {
