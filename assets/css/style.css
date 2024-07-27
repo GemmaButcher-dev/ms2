@@ -160,6 +160,13 @@ footer {
     transition: transform 1s ease-in-out;
 }
 
+input#answer0,
+input#answer1,
+input#answer2,
+input#answer3  {
+  display: none;
+}
+
 .game-start:hover {
     color: blue;
     box-shadow: 0 0 9px 2px black;
