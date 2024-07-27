@@ -103,18 +103,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }, 100);
     }
 
-    // Shuffle arrays element order
-    function arrayShuffle(array) {
-        let currentIndex = array.length, temporaryValue, randomIndex;
+// Shuffle arrays element order
+function arrayShuffle(array) {
+
+    //create copy of array
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+        //while elements are left to shuffle
         while (0 !== currentIndex) {
+
+            //pick remaining element
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
+
+            //swap with current element
             temporaryValue = array[currentIndex];
             array[currentIndex] = array[randomIndex];
             array[randomIndex] = temporaryValue;
         }
         return array;
-    }
+}
+let questionCounter = 0;
+
 //show next question
     function displayNextQuestion() {
 
@@ -122,7 +132,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         questionCounter++;
 
         if (questionCounter === 5) {
-            //get next question button
+            //get next question modal button
             let nextQuestionModalButton = document.getElementById('next-question-modal-button');
 
             //change button text
@@ -265,3 +275,4 @@ function stopTimer() {
         clearInterval(timer);
         document.getElementById('timer').classList.remove('countdown');
 }
+});
