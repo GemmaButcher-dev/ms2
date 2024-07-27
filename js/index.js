@@ -21,10 +21,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let startWonderwoman = document.getElementById('start-wonderwoman');
 
     // Event listeners for buttons
-    startSuperman.addEventListener('click', triviaSuperman);
-    startBatman.addEventListener('click', triviaBatman);
-    startWonderwoman.addEventListener('click', triviaWonderwoman);
 
+    //oldcode
+    //startSuperman.addEventListener('click', triviaSuperman);
+    //startBatman.addEventListener('click', triviaBatman);
+    //startWonderwoman.addEventListener('click', triviaWonderwoman); 
+
+    //new listeners code
     document.getElementById('start-superman').addEventListener('click', function() {
         document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
         triviaSuperman();
