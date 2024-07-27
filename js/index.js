@@ -25,6 +25,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     startBatman.addEventListener('click', triviaBatman);
     startWonderwoman.addEventListener('click', triviaWonderwoman);
 
+    document.getElementById('start-superman').addEventListener('click', function() {
+        document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
+        triviaSuperman();
+    });
+
+    document.getElementById('start-batman').addEventListener('click', function() {
+        document.body.style.backgroundImage = "url('./assets/images/batman-background.jpg')";
+        triviaBatman();
+    });
+
+    document.getElementById('start-wonderwoman').addEventListener('click', function() {
+        document.body.style.backgroundImage = "url('./assets/images/wonderwoman-background.jpg')";
+        triviaWonderwoman();
+    });
+
     // Start Superman game
     function triviaSuperman() {
         startSuperman.disabled = true;
@@ -43,8 +58,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
     }
-
-    // Similar functions for triviaBatman and triviaWonderwoman...
 
     // Shuffle arrays element order
     function arrayShuffle(array) {
