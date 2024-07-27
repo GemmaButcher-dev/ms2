@@ -160,11 +160,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return;
         }
 
-        let questionHTML = generateQuestionHTML(nextItem.value);
-        gameArea.innerHTML = questionHTML;
+        function redirectToHome() {
+            //change url to home url
+            window.location.href = '/MS2/index.html';
+        }
+        //shuffle answers & generate html
+        let shuffledAnswers = arrayShuffle([...nextItem.value.answers]);
+        let html = generateQuestionHTML(nextItem, shuffledAnswers);
+        gameArea.innerHTML = html;
 
-        attachAnswerListeners(nextItem.value);
-        startTimer();
+
+
+        }
+
+
+       // let questionHTML = generateQuestionHTML(nextItem.value);
+        //gameArea.innerHTML = questionHTML;
+
+        //attachAnswerListeners(nextItem.value);
+       // startTimer();
     }
 
     function generateQuestionHTML(questionData) {
