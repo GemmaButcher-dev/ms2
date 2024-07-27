@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Wonderwoman mode - game trigger
     let startWonderwoman = document.getElementById('start-wonderwoman');
 
+
     // Event listeners for buttons
 
     //oldcode
