@@ -169,9 +169,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let html = generateQuestionHTML(nextItem, shuffledAnswers);
         gameArea.innerHTML = html;
 
+        //next question and answers event listeners
+        attachAnswerListeners(shuffledAnswers, nextItem);
 
-
-        }
+    }
 
 
        // let questionHTML = generateQuestionHTML(nextItem.value);
@@ -179,6 +180,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         //attachAnswerListeners(nextItem.value);
        // startTimer();
+
+       //generate html for the question and answers
+    function generateQuestionHTML(nextItem, shuffledAnswers) {
+
+        //generate html for question
+        let html = `<h2>${nextItem.value.question}</h2>`;
+
+        //generate html for answers
+        shuffledAnswers.forEach((answer, index) => {
+        html += <div><input type="radio" id="answer${index}" name="answer" value="${answer}"></input>
+        <label for="answer${index}">${answer}</label></div>
+        });
+
+        //return the generated html
+        return html;
     }
 
     function generateQuestionHTML(questionData) {
@@ -189,6 +205,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
         return html;
     }
+
+
+
 
     function attachAnswerListeners(questionData) {
         questionData.answers.forEach((answer, index) => {
