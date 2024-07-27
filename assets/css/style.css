@@ -139,6 +139,7 @@ footer {
     margin: 0 auto;
     background: red;
     color: white;
+    width: 10rem;
     z-index: 1;
     position:relative;
     outline: none;
