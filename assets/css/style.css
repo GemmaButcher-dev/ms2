@@ -147,6 +147,19 @@ footer {
     cursor: pointer;
 }
 
+.game-start::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transform: translateX(-100%) rotate(35deg);
+    transition: transform 1s ease-in-out;
+}
+
 .game-start:hover {
     color: blue;
     box-shadow: 0 0 9px 2px black;
