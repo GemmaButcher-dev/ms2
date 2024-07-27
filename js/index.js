@@ -5,11 +5,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let answersCorrect = 0;
     let timer;
     const TIMER_DURATION = 10;
-    let shuffledGameDataIterator;
 
     // Get the modal to pop up
     let modal = document.getElementById('answerModal');
     let modalMessage = document.getElementById('modal-message');
+
+    //declare game shuffle iterator
+    let shuffledGameDataIterator;
 
     // Superman mode - game trigger
     let startSuperman = document.getElementById('start-superman');
@@ -255,10 +257,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 modal.style.display = "block";
             }
         }, 1000);
-    }
+}
 
-    function stopTimer() {
+    //stop timer
+function stopTimer() {
         clearInterval(timer);
         document.getElementById('timer').classList.remove('countdown');
-    }
-})
+}
