@@ -123,6 +123,19 @@ function triviaGameSuperman() {
                 soundOnButton.style.display = 'block';
             });
 
+            //play audio
+            themeAudio.play();
+
+            //sound off event listener
+            soundOffButton.addEventListener('click', function() {
+                //clear interval and pause audio
+                themeAudio.pause();
+
+                clearInterval(intervalId);
+            });
+
+
+
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -200,6 +213,17 @@ function triviaGameBatman() {
                 soundOffButton.style.display = 'none';
                 soundOnButton.style.display = 'block';
             });
+
+            //play audio
+            themeAudio.play();
+
+            //sound off event listener
+            soundOffButton.addEventListener('click', function() {
+                //clear interval and pause audio
+                themeAudio.pause();
+
+                clearInterval(intervalId);
+            });
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -276,6 +300,17 @@ function triviaGameWonderwoman() {
                 //hide sound off and show sound on
                 soundOffButton.style.display = 'none';
                 soundOnButton.style.display = 'block';
+            });
+
+            //play audio
+            themeAudio.play();
+
+            //sound off event listener
+            soundOffButton.addEventListener('click', function() {
+                //clear interval and pause audio
+                themeAudio.pause();
+
+                clearInterval(intervalId);
             });
             })
                 .catch(error => console.error('Error fetching game data:', error));
