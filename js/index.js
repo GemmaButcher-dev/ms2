@@ -18,34 +18,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let shuffledGameDataIterator;
 
     // Superman mode - game trigger
-    let startSuperman = document.getElementById('start-superman');
+    let startGameSuperman = document.getElementById('start-game-superman');
+
+    startGameSuperman.addEventListener('click', triviaGameSuperman);
 
     // Batman mode - game trigger
-    let startBatman = document.getElementById('start-batman');
+    let startBatman = document.getElementById('start-game-batman');
+
+    startGameBatman.addEventListener('click', triviaGameBatman);
 
     // Wonderwoman mode - game trigger
-    let startWonderwoman = document.getElementById('start-wonderwoman');
+    let startGameWonderwoman = document.getElementById('start-game-wonderwoman');
+
+    startGameWonderwoman.addEventListener('click', triviaGameWonderwoman);
 
 
-    // Event listeners for buttons
-
-    //oldcode
-    //startSuperman.addEventListener('click', triviaSuperman);
-    //startBatman.addEventListener('click', triviaBatman);
-    //startWonderwoman.addEventListener('click', triviaWonderwoman); 
-
-    //new listeners code
-    document.getElementById('start-superman').addEventListener('click', function() {
+    //new listeners code - needs revision
+    document.getElementById('start-game-superman').addEventListener('click', function() {
         document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
         triviaSuperman();
     });
 
-    document.getElementById('start-batman').addEventListener('click', function() {
+    document.getElementById('start-game-batman').addEventListener('click', function() {
         document.body.style.backgroundImage = "url('./assets/images/batman-background.jpg')";
         triviaBatman();
     });
 
-    document.getElementById('start-wonderwoman').addEventListener('click', function() {
+    document.getElementById('start-game-wonderwoman').addEventListener('click', function() {
         document.body.style.backgroundImage = "url('./assets/images/wonderwoman-background.jpg')";
         triviaWonderwoman();
     });
