@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     amountOfQuestions = game_data.length;
 
                     //shuffle game data order
-                    let shuffledGameData = arrayShuffle([...game_data]);
+                    let shuffledGameData = shuffleArray([...game_data]);
 
                     //create iterator for shuffled game data
                     shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
@@ -85,19 +85,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Start Batman game
-    function triviaBatman() {
+    function triviaGameBatman() {
+
+        //disable batman game button
         startSuperman.disabled = true;
         startBatman.disabled = true;
         startWonderwoman.disabled = true;
 
         setTimeout(function() {
+            //get game data
             fetch('./js/game-data/batman.json')
+
+                //parse json data
                 .then(response => response.json())
+
+                //handle parsed data & create game
                 .then(function(game_data) {
-                    amountOfQuestions = game_data.length;
-                    let shuffledGameData = arrayShuffle([...game_data]);
-                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
-                    displayNextQuestion();
+
+                //set amount of questions
+                amountOfQuestions = game_data.length;
+
+                //shuffle game data order
+                let shuffledGameData = shuffleArray([...game_data]);
+
+                //create iterator for shuffled game data
+                shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+                //show first question
+                displayNextQuestion();
                 })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -105,18 +120,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Start Wonderwoman game
     function triviaWonderwoman() {
+
+        //disable batman game button
         startSuperman.disabled = true;
         startBatman.disabled = true;
         startWonderwoman.disabled = true;
 
         setTimeout(function() {
+            //get game data
             fetch('./js/game-data/wonderwoman.json')
-                .then(response => response.json())
-                .then(function(game_data) {
-                    amountOfQuestions = game_data.length;
-                    let shuffledGameData = arrayShuffle([...game_data]);
-                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
-                    displayNextQuestion();
+
+            //parse json data
+            .then(response => response.json())
+
+            //handle parsed data & create game
+            .then(function(game_data) {
+
+                //set amount of questions
+                amountOfQuestions = game_data.length;
+
+                //shuffle game data order
+                let shuffledGameData = arrayShuffle([...game_data]);
+
+                //create iterator for shuffled game data
+                shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+                //show first question
+                displayNextQuestion();
                 })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
