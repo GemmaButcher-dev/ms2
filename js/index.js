@@ -95,6 +95,19 @@ function triviaGameSuperman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+
+            //store interval ID
+            let intervalId;
+
+            // play audio every 30 seconds
+            intervalId = setInterval(function(){
+                themeAudio.currentTime = 0;
+                themeAudio.play();
+            }, 30000); // 30000 milliseconds = 30 seconds
+
+            //get sounds-off and sound-on buttons
+            let soundOffButton = document.querySelector('.sound-off');
+            let soundOnButton = document.querySelector('.sound-on');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -145,6 +158,19 @@ function triviaGameBatman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+
+            //store interval ID
+            let intervalId;
+
+            // play audio every 30 seconds
+            intervalId = setInterval(function(){
+                themeAudio.currentTime = 0;
+                themeAudio.play();
+            }, 30000); // 30000 milliseconds = 30 seconds
+
+            //get sounds-off and sound-on buttons
+            let soundOffButton = document.querySelector('.sound-off');
+            let soundOnButton = document.querySelector('.sound-on');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -195,6 +221,19 @@ function triviaGameWonderwoman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+
+            //store interval ID
+            let intervalId;
+
+            // play audio every 30 seconds
+            intervalId = setInterval(function(){
+                themeAudio.currentTime = 0;
+                themeAudio.play();
+            }, 30000); // 30000 milliseconds = 30 seconds
+
+            //get sounds-off and sound-on buttons
+            let soundOffButton = document.querySelector('.sound-off');
+            let soundOnButton = document.querySelector('.sound-on');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
