@@ -23,7 +23,7 @@
     startGameSuperman.addEventListener('click', triviaGameSuperman);
 
     // Batman mode - game trigger
-    let startBatman = document.getElementById('start-game-batman');
+    let startGameBatman = document.getElementById('start-game-batman');
 
     startGameBatman.addEventListener('click', triviaGameBatman);
 
@@ -34,120 +34,120 @@
 
 
     //new listeners code - needs revision
-    document.getElementById('start-game-superman').addEventListener('click', function() {
-        document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
-        triviaSuperman();
-    });
+    //document.getElementById('start-game-superman').addEventListener('click', function() {
+    //    document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
+    //    triviaSuperman();
+    //});
 
-    document.getElementById('start-game-batman').addEventListener('click', function() {
-        document.body.style.backgroundImage = "url('./assets/images/batman-background.jpg')";
-        triviaBatman();
-    });
+    //document.getElementById('start-game-batman').addEventListener('click', function() {
+    //    document.body.style.backgroundImage = "url('./assets/images/batman-background.jpg')";
+    //    triviaBatman();
+    //});
 
-    document.getElementById('start-game-wonderwoman').addEventListener('click', function() {
-        document.body.style.backgroundImage = "url('./assets/images/wonderwoman-background.jpg')";
-        triviaWonderwoman();
-    });
+    //document.getElementById('start-game-wonderwoman').addEventListener('click', function() {
+    //    document.body.style.backgroundImage = "url('./assets/images/wonderwoman-background.jpg')";
+    //    triviaWonderwoman();
+    //});
 
-    // Start Superman game
-    function triviaSuperman() {
+// Start Superman game
+function triviaGameSuperman() {
 
-        //disable startGameSuperman button
-        startSuperman.disabled = true;
-        startBatman.disabled = true;
-        startWonderwoman.disabled = true;
+    //disable startGameSuperman button
+    startGameSuperman.disabled = true;
+    startGameBatman.disabled = true;
+    startGameWonderwoman.disabled = true;
 
 
-        setTimeout(function() {
-            //fetch game data
-            fetch('./js/game-data/superman.json')
+    setTimeout(function() {
+        //fetch game data
+        fetch('./js/game-data/superman.json')
 
-            //parse the JSON data
-            .then(response => response.json())
+        //parse the JSON data
+        .then(response => response.json())
 
-            //handle parsed data & create game
-            .then(function(game_data) {
+        //handle parsed data & create game
+        .then(function(game_data) {
 
-                    //set amount of questions
-                    amountOfQuestions = game_data.length;
+            //set amount of questions
+            amountOfQuestions = game_data.length;
 
-                    //shuffle game data order
-                    let shuffledGameData = shuffleArray([...game_data]);
+            //shuffle game data order
+            let shuffledGameData = shuffleArray([...game_data]);
 
-                    //create iterator for shuffled game data
-                    shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+            //create iterator for shuffled game data
+            shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
 
-                    //show first question
-                    displayNextQuestion();
-                })
+            //show first question
+            displayNextQuestion();
+            })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
     }
 
-    // Start Batman game
-    function triviaGameBatman() {
+// Start Batman game
+function triviaGameBatman() {
 
-        //disable batman game button
-        startSuperman.disabled = true;
-        startBatman.disabled = true;
-        startWonderwoman.disabled = true;
+    //disable batman game button
+    startGameSuperman.disabled = true;
+    startGameBatman.disabled = true;
+    startGameWonderwoman.disabled = true;
 
-        setTimeout(function() {
-            //get game data
-            fetch('./js/game-data/batman.json')
+    setTimeout(function() {
+        //get game data
+        fetch('./js/game-data/batman.json')
 
-                //parse json data
-                .then(response => response.json())
+        //parse json data
+        .then(response => response.json())
 
-                //handle parsed data & create game
-                .then(function(game_data) {
+        //handle parsed data & create game
+        .then(function(game_data) {
 
-                //set amount of questions
-                amountOfQuestions = game_data.length;
+            //set amount of questions
+            amountOfQuestions = game_data.length;
 
-                //shuffle game data order
-                let shuffledGameData = shuffleArray([...game_data]);
+            //shuffle game data order
+            let shuffledGameData = shuffleArray([...game_data]);
 
-                //create iterator for shuffled game data
-                shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+            //create iterator for shuffled game data
+            shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
 
-                //show first question
-                displayNextQuestion();
-                })
+            //show first question
+            displayNextQuestion();
+            })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
     }
 
-    // Start Wonderwoman game
-    function triviaWonderwoman() {
+// Start Wonderwoman game
+function triviaWonderwoman() {
 
-        //disable batman game button
-        startSuperman.disabled = true;
-        startBatman.disabled = true;
-        startWonderwoman.disabled = true;
+    //disable batman game button
+    startGameSuperman.disabled = true;
+    startGameBatman.disabled = true;
+    startGameWonderwoman.disabled = true;
 
-        setTimeout(function() {
-            //get game data
-            fetch('./js/game-data/wonderwoman.json')
+    setTimeout(function() {
+        //get game data
+        fetch('./js/game-data/wonderwoman.json')
 
-            //parse json data
-            .then(response => response.json())
+        //parse json data
+        .then(response => response.json())
 
-            //handle parsed data & create game
-            .then(function(game_data) {
+        //handle parsed data & create game
+        .then(function(game_data) {
 
-                //set amount of questions
-                amountOfQuestions = game_data.length;
+            //set amount of questions
+            amountOfQuestions = game_data.length;
 
-                //shuffle game data order
+            //shuffle game data order
                 let shuffledGameData = shuffleArray([...game_data]);
 
-                //create iterator for shuffled game data
+            //create iterator for shuffled game data
                 shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
 
-                //show first question
-                displayNextQuestion();
-                })
+            //show first question
+            displayNextQuestion();
+            })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
     }
