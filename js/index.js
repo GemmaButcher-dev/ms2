@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+//document.addEventListener('DOMContentLoaded', (event) => {
     // Game Logic
 
     //Declare Game Variables
     let correctAnswer;
     let audio;
-    let theme audio;
+    let themeAudio;
     let amountOfQuestions;
     let answersCorrect = 0;
     let timer;
@@ -321,4 +321,3 @@ function stopTimer() {
     clearInterval(timer);
     document.getElementById('timer').classList.remove('countdown');
 }
-
