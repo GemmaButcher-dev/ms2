@@ -91,6 +91,10 @@ function triviaGameSuperman() {
 // Start Batman game
 function triviaGameBatman() {
 
+    //batman audio
+    audio = new Audio('./assets/audio/im_batman.mp3');
+    audio.play();
+
     //disable batman game button
     startGameSuperman.disabled = true;
     startGameBatman.disabled = true;
@@ -124,6 +128,10 @@ function triviaGameBatman() {
 
 // Start Wonderwoman game
 function triviaGameWonderwoman() {
+
+    //wonderwoman audio
+    audio = new Audio('./assets/audio/wonderwoman.mp3');
+    audio.play();
 
     //disable batman game button
     startGameSuperman.disabled = true;
