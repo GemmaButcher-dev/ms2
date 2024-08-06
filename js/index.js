@@ -108,6 +108,21 @@ function triviaGameSuperman() {
             //get sounds-off and sound-on buttons
             let soundOffButton = document.querySelector('.sound-off');
             let soundOnButton = document.querySelector('.sound-on');
+
+            //play music event listener
+            themeAudio.addEventListener('play', function() {
+                //hide sound on and show sound off
+                soundOnButton.style.display = 'none';
+                soundOffButton.style.display = 'block';
+            });
+
+            //pause music event listener
+            themeAudio.addEventListener('pause', function() {
+                //hide sound off and show sound on
+                soundOffButton.style.display = 'none';
+                soundOnButton.style.display = 'block';
+            });
+
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -171,6 +186,20 @@ function triviaGameBatman() {
             //get sounds-off and sound-on buttons
             let soundOffButton = document.querySelector('.sound-off');
             let soundOnButton = document.querySelector('.sound-on');
+
+            //play music event listener
+            themeAudio.addEventListener('play', function() {
+                //hide sound on and show sound off
+                soundOnButton.style.display = 'none';
+                soundOffButton.style.display = 'block';
+            });
+
+            //pause music event listener
+            themeAudio.addEventListener('pause', function() {
+                //hide sound off and show sound on
+                soundOffButton.style.display = 'none';
+                soundOnButton.style.display = 'block';
+            });
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -234,6 +263,20 @@ function triviaGameWonderwoman() {
             //get sounds-off and sound-on buttons
             let soundOffButton = document.querySelector('.sound-off');
             let soundOnButton = document.querySelector('.sound-on');
+
+            //play music event listener
+            themeAudio.addEventListener('play', function() {
+                //hide sound on and show sound off
+                soundOnButton.style.display = 'none';
+                soundOffButton.style.display = 'block';
+            });
+
+            //pause music event listener
+            themeAudio.addEventListener('pause', function() {
+                //hide sound off and show sound on
+                soundOffButton.style.display = 'none';
+                soundOnButton.style.display = 'block';
+            });
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
