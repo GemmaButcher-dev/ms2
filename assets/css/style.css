@@ -40,8 +40,13 @@
 /* #1.1 - Backgrounds =================================== */
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url('../images/hulk_background.jpg');
     background-size: cover;
+    min-height: 100dvh;
+    overflow: hidden;
+    position: relative;
 }
 
 /* #2.0 - Layout =================================== */
