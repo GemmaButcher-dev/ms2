@@ -43,38 +43,49 @@
     </header>
 
     <main id="game-area">
-        <h1 class="welcome-hidden">Welcome to Super Squad Trivia</h1>
+        <h1 class="welcome-hidden">Welcome to Super Squad Trivia Game</h1>
         <div class="welcome-container">
             <img class="welcome-image" src="assets/images/super-squad.png" alt="text welcome to super squad">
         </div>
         <div class="info"></div>
+
+        <!-- Intro message -->
         <h2 class="intro-text">
             <br>Join the Super Squad! Play The Quiz!<br>
-            <br>Be Heroic!<br>
+            <br>Be Heroic!<br><br>
         </h2>
-        <button id="start-superman" type="button" class="game-start" aria-label="button to start superhero trivia game">Superman</button><br>
-        <button id="start-batman" type="button" class="game-start" aria-label="button to start superhero trivia game">Batman</button><br>
-        <button id="start-wonderwoman" type="button" class="game-start" aria-label="button to start superhero trivia game">WonderWoman</button>
+
+        <button id="start-game-superman" type="button" class="game-start" aria-label="button to start superhero trivia game">Superman</button><br>
+        <button id="start-game-batman" type="button" class="game-start" aria-label="button to start superhero trivia game">Batman</button><br>
+        <button id="start-game-wonderwoman" type="button" class="game-start" aria-label="button to start superhero trivia game">WonderWoman</button>
     </main>
 
+    <!-- Sound -->
     <div class="sound">
-        <p id="sound-control"></p>
-    </div>
+        <p id="sound-control">
+        <!--html input from index.js -->
+    </p></div>
 
+    <!-- timer -->
     <div class="time">
         <p id="timer" class=""></p>
     </div>
 
+    <!-- footer -->
     <footer>
         Created by Flash Games (Copyright 2024)
     </footer>
 
-    <!-- Ensure the script is loaded after the HTML content -->
+    <!-- Ensure the script is loaded after the HTML content / Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    
+    <!-- link to js file-->
+    <script script type="module" src="./js/index.js"></script>
 
+    <!--user message if JS is not supported by browser-->
     <noscript>Your browser does not support JavaScript!</noscript>
 
+    
     <div id="answerModal" class="modal">
         <div id="modal-content" class="modal-content">
             <span id="modal-message"></span>
