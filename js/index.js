@@ -134,11 +134,16 @@ function triviaGameSuperman() {
                 clearInterval(intervalId);
             });
 
+            //sound on event listener
+            soundOnButton.addEventListener('click', function() {
+                //set interval and play audio
+                themeAudio.play();
+            });
 
-
-            })
-                .catch(error => console.error('Error fetching game data:', error));
-        }, 100);
+        })
+        // error handling
+        .catch(error => console.error('Error fetching game data:', error));
+    }, 2000);
     }
 
 // Start Batman game
@@ -224,9 +229,17 @@ function triviaGameBatman() {
 
                 clearInterval(intervalId);
             });
-            })
-                .catch(error => console.error('Error fetching game data:', error));
-        }, 100);
+
+            //sound on event listener
+            soundOnButton.addEventListener('click', function() {
+                //set interval and play audio
+                themeAudio.play();
+            });
+
+        })
+        //error handling
+        .catch(error => console.error('Error fetching game data:', error));
+        }, 2000);
     }
 
 // Start Wonderwoman game
@@ -312,9 +325,17 @@ function triviaGameWonderwoman() {
 
                 clearInterval(intervalId);
             });
+
+            //sound on event listener
+            soundOnButton.addEventListener('click', function() {
+                //set interval and play audio
+                themeAudio.play();
             })
-                .catch(error => console.error('Error fetching game data:', error));
-        }, 100);
+
+        })
+            // error handling
+            .catch(error => console.error('Error fetching game data:', error));
+        }, 2000);
     }
 
 // Shuffle arrays element order
