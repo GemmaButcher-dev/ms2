@@ -119,7 +119,7 @@ function triviaGameBatman() {
     }
 
 // Start Wonderwoman game
-function triviaWonderwoman() {
+function triviaGameWonderwoman() {
 
     //disable batman game button
     startGameSuperman.disabled = true;
