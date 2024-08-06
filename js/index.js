@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 amountOfQuestions = game_data.length;
 
                 //shuffle game data order
-                let shuffledGameData = arrayShuffle([...game_data]);
+                let shuffledGameData = shuffleArray([...game_data]);
 
                 //create iterator for shuffled game data
                 shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
@@ -153,56 +153,58 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
 // Shuffle arrays element order
-function arrayShuffle(array) {
+function shuffleArray(array) {
 
     //create copy of array
     let currentIndex = array.length, temporaryValue, randomIndex;
 
-        //while elements are left to shuffle
-        while (0 !== currentIndex) {
+    //while elements are left to shuffle
+    while (0 !== currentIndex) {
 
-            //pick remaining element
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
+        //pick remaining element
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-            //swap with current element
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-        return array;
+        //swap with current element
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    
+    return array;
 }
+
 let questionCounter = 0;
 
 //show next question
     function displayNextQuestion() {
 
-        //increment score counter
-        questionCounter++;
+    //increment score counter
+    questionCounter++;
 
-        if (questionCounter === 5) {
-            //get next question modal button
-            let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+    if (questionCounter === 5) {
+        //get next question modal button
+        let nextQuestionModalButton = document.getElementById('next-question-modal-button');
 
-            //change button text
-            nextQuestionModalButton.textContent = "See Your Score";
-        }
+        //change button text
+        nextQuestionModalButton.textContent = "See Your Score";
+    }
 
-        startTimer();
+    startTimer();
 
-        //get next item from shuffled data iterator
-        let nextItem = shuffledGameDataIterator.next();
+    //get next item from shuffled data iterator
+    let nextItem = shuffledGameDataIterator.next();
 
-        //get element from game area
-        let gameArea = document.getElementById('game-area');
+    //get element from game area
+    let gameArea = document.getElementById('game-area');
 
-        //show message when finished questions
-        if (nextItem.done) {
+    //show message when finished questions
+    if (nextItem.done) {
 
-            stopTimer();
+        stopTimer();
 
-            document.getElementById('timer').textContent = null;
-            gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
+        document.getElementById('timer').textContent = null;
+        gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
                               <img src="${imageSrc}" alt="result image" class="result-image">
                               <div class='button-container'>
                                   <button id="return-home" type="button" class="game-start" aria-label="button to return to home page">
@@ -227,58 +229,52 @@ let questionCounter = 0;
             window.location.href = '/MS2/index.html';
         }
         //shuffle answers & generate html
-        let shuffledAnswers = arrayShuffle([...nextItem.value.answers]);
+        let shuffledAnswers = shuffleArray([...nextItem.value.answers]);
         let html = generateQuestionHTML(nextItem, shuffledAnswers);
         gameArea.innerHTML = html;
 
         //next question and answers event listeners
         attachAnswerListeners(shuffledAnswers, nextItem);
 
-    }
+}
 
 
-       // let questionHTML = generateQuestionHTML(nextItem.value);
-        //gameArea.innerHTML = questionHTML;
+//generate html for the question and answers
+function generateQuestionHTML(nextItem, shuffledAnswers) {
 
-        //attachAnswerListeners(nextItem.value);
-       // startTimer();
+    //generate html for question
+    let html = `<h2>${nextItem.value.question}</h2>`;
 
-       //generate html for the question and answers
-    function generateQuestionHTML(nextItem, shuffledAnswers) {
+    //generate html for answers
+    shuffledAnswers.forEach((answer, index) => {
+        html += `<div><input type="radio" id="answer${index}" name="answer" value="${answer}"></input>
+                <label for="answer${index}">${answer}</label></div>`;
+    });
 
-        //generate html for question
-        let html = `<h2>${nextItem.value.question}</h2>`;
+    //return the generated html
+    return html;
+}
 
-        //generate html for answers
-        shuffledAnswers.forEach((answer, index) => {
-        html += <div><input type="radio" id="answer${index}" name="answer" value="${answer}"></input>
-        <label for="answer${index}">${answer}</label></div>
-        });
+//attach answer event listeners
+function attachAnswerListeners(shuffledAnswers, nextItem) {
 
-        //return the generated html
-        return html;
-    }
+    //add answer event listeners
+    shuffledAnswers.forEach ((answer, index) => {
 
-    //attach answer event listeners
-    function attachAnswerListeners(shuffledAnswers, nextItem) {
+        //get answer Element
+        let answerElement = document.getElementById(`answer${index}`);
+        answerElement.addEventListener('click', function() {
+            stopTimer();
 
-        //add answer event listeners
-        shuffledAnswers.forEach ((answer, index) => {
+            // show modal with answer result
+            if (answer === nextItem.value.correctAnswer) {
+                 //get element
+                let background = document.getElementById('modal-content');
+                //change background image
+                background.style.backgroundImage = "url('')";
+                answersCorrect++;
 
-            //get answer Element
-            let answerElement = document.getElementById(`answer${index}`);
-            answerElement.addEventListener('click', function() {
-                stopTimer();
-
-                // show modal with answer result
-                if (answer === nextItem.value.correctAnswer) {
-                    //get element
-                    let background = document.getElementById('modal-content');
-                    //change background image
-                    background.style.backgroundImage = "url('')";
-                    answersCorrect++;
-
-                    modalMessage.textContent = 'Correct!';
+                modalMessage.textContent = 'Correct!';
                 } else {
                     //get element
                     let background = document.getElementById('modal-content');
@@ -291,37 +287,38 @@ let questionCounter = 0;
         });
     }
   
-    // add event listener to next question modal button
-    let nextQuestionModalButton = document.getElementById('next-question-modal-button');
-    nextQuestionModalButton.addEventListener('click', function() {
-        modal.style.display = "none";
-        displayNextQuestion();
-    });
+// add event listener to next question modal button
+let nextQuestionModalButton = document.getElementById('next-question-modal-button');
+nextQuestionModalButton.addEventListener('click', function() {
+    modal.style.display = "none";
+    displayNextQuestion();
+});
 
-    //start timer function
-    function startTimer() {
-        let timeLeft = TIMER_DURATION;
-        document.getElementById('timer').classList.add('countdown');
+//start timer function
+function startTimer() {
+    let timeLeft = TIMER_DURATION;
+    document.getElementById('timer').classList.add('countdown');
+    document.getElementById('timer').textContent = timeLeft;
+
+    timer = setInterval(() => {
+        timeLeft--;
         document.getElementById('timer').textContent = timeLeft;
 
-        timer = setInterval(() => {
-            timeLeft--;
-            document.getElementById('timer').textContent = timeLeft;
-
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                // get element
-                let background = document.getElementById('modal-content');
-                background.style.backgroundImage =  "url('')";
-                modalMessage.textContent = 'Time is up!';
-                modal.style.display = "block";
-            }
-        }, 1000);
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            // get element
+            let background = document.getElementById('modal-content');
+            //change background image
+            background.style.backgroundImage =  "url('')";
+            modalMessage.textContent = 'Time is up!';
+            modal.style.display = "block";
+        }
+    }, 1000);
 }
 
-    //stop timer
+//stop timer
 function stopTimer() {
-        clearInterval(timer);
-        document.getElementById('timer').classList.remove('countdown');
+    clearInterval(timer);
+    document.getElementById('timer').classList.remove('countdown');
 }
-});
+
