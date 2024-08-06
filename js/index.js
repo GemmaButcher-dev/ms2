@@ -51,17 +51,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Start Superman game
     function triviaSuperman() {
+
+        //disable startGameSuperman button
         startSuperman.disabled = true;
         startBatman.disabled = true;
         startWonderwoman.disabled = true;
 
+
         setTimeout(function() {
+            //fetch game data
             fetch('./js/game-data/superman.json')
-                .then(response => response.json())
-                .then(function(game_data) {
+
+            //parse the JSON data
+            .then(response => response.json())
+
+            //handle parsed data & create game
+            .then(function(game_data) {
+
+                    //set amount of questions
                     amountOfQuestions = game_data.length;
+
+                    //shuffle game data order
                     let shuffledGameData = arrayShuffle([...game_data]);
+
+                    //create iterator for shuffled game data
                     shuffledGameDataIterator = shuffledGameData[Symbol.iterator]();
+
+                    //show first question
                     displayNextQuestion();
                 })
                 .catch(error => console.error('Error fetching game data:', error));
