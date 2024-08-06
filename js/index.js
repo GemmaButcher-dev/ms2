@@ -92,6 +92,9 @@ function triviaGameSuperman() {
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
                 <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
             `;
+
+            //create new audio
+            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -139,6 +142,9 @@ function triviaGameBatman() {
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
                 <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
             `;
+
+            //create new audio
+            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -186,6 +192,9 @@ function triviaGameWonderwoman() {
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
                 <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
             `;
+
+            //create new audio
+            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
