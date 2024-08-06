@@ -83,6 +83,9 @@ function triviaGameSuperman() {
 
             //show first question
             displayNextQuestion();
+
+            //get sound control element
+            let soundControl = document.getElementById('sound-control');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -121,6 +124,9 @@ function triviaGameBatman() {
 
             //show first question
             displayNextQuestion();
+
+            //get sound control element
+            let soundControl = document.getElementById('sound-control');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -159,6 +165,9 @@ function triviaGameWonderwoman() {
 
             //show first question
             displayNextQuestion();
+
+            //get sound control element
+            let soundControl = document.getElementById('sound-control');
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
