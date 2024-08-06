@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    // Game Logic
+
     //Declare Game Variables
-    let amountOfQuestions;
     let correctAnswer;
+    let audio;
+    let theme audio;
+    let amountOfQuestions;
     let answersCorrect = 0;
     let timer;
     const TIMER_DURATION = 10;
