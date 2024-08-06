@@ -86,6 +86,12 @@ function triviaGameSuperman() {
 
             //get sound control element
             let soundControl = document.getElementById('sound-control');
+
+            // Insert HTML into the sound-control element
+            soundControl.innerHTML = `
+                <i class="fa-solid fa-volume-high icon-white sound-on"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+            `;
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -127,6 +133,12 @@ function triviaGameBatman() {
 
             //get sound control element
             let soundControl = document.getElementById('sound-control');
+
+            // Insert HTML into the sound-control element
+            soundControl.innerHTML = `
+                <i class="fa-solid fa-volume-high icon-white sound-on"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+            `;
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
@@ -168,6 +180,12 @@ function triviaGameWonderwoman() {
 
             //get sound control element
             let soundControl = document.getElementById('sound-control');
+
+            // Insert HTML into the sound-control element
+            soundControl.innerHTML = `
+                <i class="fa-solid fa-volume-high icon-white sound-on"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+            `;
             })
                 .catch(error => console.error('Error fetching game data:', error));
         }, 100);
