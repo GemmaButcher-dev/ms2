@@ -52,6 +52,10 @@
 // Start Superman game
 function triviaGameSuperman() {
 
+    //superman audio
+    audio = new Audio('./assets/audio/superman.mp3');
+    audio.play();
+
     //disable startGameSuperman button
     startGameSuperman.disabled = true;
     startGameBatman.disabled = true;
