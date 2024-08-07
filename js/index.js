@@ -388,22 +388,22 @@ function displayNextQuestion() {
     if (nextItem.done) {
 
         stopTimer();
-        themeAudio();
+        themeAudio.pause();
 
         themeAudio.currentTime = 0;
 
         let imageSrc;
 
         if (answersCorrect >= 3 && answersCorrect !=5) {
-            audio = new Audio('./assets/sounds/its_all_part_of_the_plan.mp3');
+            audio = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
             audio.play();
             imageSrc = './assets/images/joker.jpg';
         } else if (answersCorrect === 5) {
-            audio = new Audio('./assets/sounds/superman_intro.mp3')
+            audio = new Audio('./assets/audio/superman_intro.mp3')
             audio.play();
             imageSrc = './assets/images/superman_1.jpg';
         } else {
-            audio = new Audio('./assets/sounds/snag_im_having_a_bad_day.mp3')
+            audio = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3')
             audio.play();
             imageSrc = './assets/images/lex_luther.jpg';
         }
@@ -435,7 +435,7 @@ function displayNextQuestion() {
 
     function redirectToHome() {
         //change url to home url
-        window.location.href = '/MS2/index.html';
+        window.location.href = '/index.html';
     }
     //shuffle answers & generate html
     let shuffledAnswers = shuffleArray([...nextItem.value.answers]);
