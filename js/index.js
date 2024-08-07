@@ -480,7 +480,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                  //get element
                 let background = document.getElementById('modal-content');
                 //change background image
-                background.style.backgroundImage = "url('.assets/images/superman.1.jpg')";
+                background.style.backgroundImage = "url('.assets/images/superman_1.jpg')";
                 answersCorrect++;
 
                 modalMessage.textContent = 'Correct!';
@@ -518,7 +518,7 @@ function startTimer() {
             // get element
             let background = document.getElementById('modal-content');
             //change background image
-            background.style.backgroundImage =  "url('')";
+            background.style.backgroundImage =  "url('./assets/images/lex_luther.jpg')";
             modalMessage.textContent = 'Time is up!';
             modal.style.display = "block";
         }
