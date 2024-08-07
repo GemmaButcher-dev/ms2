@@ -376,3 +376,15 @@ label:hover::after,
 
 /* #6.6 - Sounds =================================== */
 
+.sound {
+    color: #ffffff;
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    font-size: 1.5em;
+}
+
+#sound-control {
+    position: absolute;
+    bottom: 18px;
+}
