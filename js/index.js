@@ -392,6 +392,22 @@ let questionCounter = 0;
 
         themeAudio.currentTime = 0;
 
+        let imageSrc;
+
+        if (answersCorrect >= 3 && answersCorrect !=5) {
+            audio = new Audio('./assets/sounds/its_all_part_of_the_plan.mp3');
+            audio.play();
+            imageSrc = './assets/images/';
+        } else if (answersCorrect === 5) {
+            audio = new Audio('./assets/sounds/superman_intro.mp3')
+            audio.play();
+            imageSrc = './assets/images/';
+        } else {
+            audio = new Audio('./assets/sounds/snag_im_having_a_bad_day.mp3')
+            audio.play();
+            imageSrc = './assets/images/';
+        }
+
         document.getElementById('timer').textContent = null;
         gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
                               <img src="${imageSrc}" alt="result image" class="result-image">
