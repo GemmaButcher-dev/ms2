@@ -421,6 +421,6 @@ label:hover::after,
 
 }
 
-@media screen and (min width: 1440px) {
+@media screen and (min-width: 1440px) {
 
 }
