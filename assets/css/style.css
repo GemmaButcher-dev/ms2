@@ -115,13 +115,18 @@ header {
 
 footer {
     position: fixed;
-    width: 100%;
+    left: 0;
     bottom: 0;
+    width: 100%;
     font-family: 'Exo-2', sans-serif;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     text-align: center;
     color: white;
-    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #888888;
+    border-top: 1px solid #888888;
+    box-shadow: 0 0 5px 3px #888888;
+    z-index: 3;
 }
 
 /* #5.1 - home & quiz =================================== */
