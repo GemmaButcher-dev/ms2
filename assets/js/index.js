@@ -64,7 +64,7 @@ function triviaGameSuperman() {
 
     setTimeout(function() {
         //fetch game data
-        fetch('/js/game-data/superman.json')
+        fetch('/assets/js/game-data/superman.json')
 
         //parse the JSON data
         .then(response => response.json())
@@ -160,7 +160,7 @@ function triviaGameBatman() {
 
     setTimeout(function() {
         //get game data
-        fetch('./js/game-data/batman.json')
+        fetch('./assets/js/game-data/batman.json')
 
         //parse json data
         .then(response => response.json())
@@ -256,7 +256,7 @@ function triviaGameWonderwoman() {
 
     setTimeout(function() {
         //get game data
-        fetch('/js/game-data/wonderwoman.json')
+        fetch('/assets/js/game-data/wonderwoman.json')
 
         //parse json data
         .then(response => response.json())
@@ -480,7 +480,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                  //get element
                 let background = document.getElementById('modal-content');
                 //change background image
-                background.style.backgroundImage = "url('./assets/images/superman_1.jpg')";
+                background.style.backgroundImage = "url('/assets/images/superman_1.jpg')";
                 answersCorrect++;
 
                 modalMessage.textContent = 'Correct!';
@@ -488,7 +488,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                     //get element
                     let background = document.getElementById('modal-content');
                     //change background image
-                    background.style.backgroundImage = "url('./assets/images/joker.jpg')";
+                    background.style.backgroundImage = "url('/assets/images/joker.jpg')";
                     modalMessage.textContent = 'Incorrect. The correct answer was ' + nextItem.value.correctAnswer;
                 }
                 modal.style.display = "block";
@@ -518,7 +518,7 @@ function startTimer() {
             // get element
             let background = document.getElementById('modal-content');
             //change background image
-            background.style.backgroundImage =  "url('./assets/images/lex_luther.jpg')";
+            background.style.backgroundImage =  "url('/assets/images/lex_luther.jpg')";
             modalMessage.textContent = 'Time is up!';
             modal.style.display = "block";
         }
