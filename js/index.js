@@ -363,7 +363,7 @@ function shuffleArray(array) {
 let questionCounter = 0;
 
 //show next question
-    function displayNextQuestion() {
+function displayNextQuestion() {
 
     //increment score counter
     questionCounter++;
@@ -417,29 +417,33 @@ let questionCounter = 0;
                                   </button>
                               </div>`;
 
-            let returnHome = document.getElementById('return-home');
-            returnHome.addEventListener('click', function() {
-                setTimeout(redirectToHome, 2000);
-            });
-                      
-            returnHome.addEventListener('touchend', function() {
+        let returnHome = document.getElementById('return-home');
+        returnHome.addEventListener('click', function() {
+            audio = new Audio('./assets/sounds/game_over.mp3')
+         audio.play();
             setTimeout(redirectToHome, 2000);
-            });
+        });
+                      
+        returnHome.addEventListener('touchend', function() {
+            audio = new Audio('./assets/sounds/game_over.mp3')
+            audio.play();
+            setTimeout(redirectToHome, 2000);
+        });
             
-            return;
-        }
+        return;
+    }
 
-        function redirectToHome() {
-            //change url to home url
-            window.location.href = '/MS2/index.html';
-        }
-        //shuffle answers & generate html
-        let shuffledAnswers = shuffleArray([...nextItem.value.answers]);
-        let html = generateQuestionHTML(nextItem, shuffledAnswers);
-        gameArea.innerHTML = html;
+    function redirectToHome() {
+        //change url to home url
+        window.location.href = '/MS2/index.html';
+    }
+    //shuffle answers & generate html
+    let shuffledAnswers = shuffleArray([...nextItem.value.answers]);
+    let html = generateQuestionHTML(nextItem, shuffledAnswers);
+    gameArea.innerHTML = html;
 
-        //next question and answers event listeners
-        attachAnswerListeners(shuffledAnswers, nextItem);
+    //next question and answers event listeners
+    attachAnswerListeners(shuffledAnswers, nextItem);
 
 }
 
@@ -476,7 +480,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                  //get element
                 let background = document.getElementById('modal-content');
                 //change background image
-                background.style.backgroundImage = "url('')";
+                background.style.backgroundImage = "url('.assets/images/superman.1.jpg')";
                 answersCorrect++;
 
                 modalMessage.textContent = 'Correct!';
@@ -484,7 +488,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                     //get element
                     let background = document.getElementById('modal-content');
                     //change background image
-                    background.style.backgroundImage = "url('')";
+                    background.style.backgroundImage = "url('.assets/images/joker.jpg')";
                     modalMessage.textContent = 'Incorrect. The correct answer was ' + nextItem.value.correctAnswer;
                 }
                 modal.style.display = "block";
