@@ -397,15 +397,15 @@ function displayNextQuestion() {
         if (answersCorrect >= 3 && answersCorrect !=5) {
             audio = new Audio('./assets/sounds/its_all_part_of_the_plan.mp3');
             audio.play();
-            imageSrc = './assets/images/';
+            imageSrc = './assets/images/joker.jpg';
         } else if (answersCorrect === 5) {
             audio = new Audio('./assets/sounds/superman_intro.mp3')
             audio.play();
-            imageSrc = './assets/images/';
+            imageSrc = './assets/images/superman_1';
         } else {
             audio = new Audio('./assets/sounds/snag_im_having_a_bad_day.mp3')
             audio.play();
-            imageSrc = './assets/images/';
+            imageSrc = './assets/images/lex_luther.jpg';
         }
 
         document.getElementById('timer').textContent = null;
@@ -420,7 +420,7 @@ function displayNextQuestion() {
         let returnHome = document.getElementById('return-home');
         returnHome.addEventListener('click', function() {
             audio = new Audio('./assets/sounds/game_over.mp3')
-         audio.play();
+            audio.play();
             setTimeout(redirectToHome, 2000);
         });
                       
