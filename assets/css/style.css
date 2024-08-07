@@ -307,18 +307,6 @@ label:hover::after,
   border-radius: 50%;
 }
 
-/* #6.1 - Timer =================================== */
-
-#timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.time {
-    text-align: center;
-}
-
 /* #6.2 - Modal =================================== */
 
 .result-image {
@@ -337,7 +325,6 @@ label:hover::after,
     border-radius: 5px;
     width: 50%;
     height: 100%;
-    margin: auto;
   }
   
   .modal-content {
@@ -374,3 +361,18 @@ label:hover::after,
   .modal-game-start {
       background-color: #000000;
   }
+
+  /* #6.1 - Timer =================================== */
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    text-align: center;
+}
+
+/* #6.6 - Sounds =================================== */
+
