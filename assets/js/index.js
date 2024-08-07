@@ -54,6 +54,7 @@ function triviaGameSuperman() {
 
     //superman audio
     audio = new Audio('/assets/audio/superman.mp3');
+    audio.muted = true; // muted by default
     audio.play();
 
     //disable startGameSuperman button
@@ -95,6 +96,8 @@ function triviaGameSuperman() {
 
             //create new audio
             themeAudio = new Audio('/assets/audio/hero_theme.mp3');
+            themeAudio.muted = true; //muted by default
+
 
             //store interval ID
             let intervalId;
@@ -128,16 +131,22 @@ function triviaGameSuperman() {
 
             //sound off event listener
             soundOffButton.addEventListener('click', function() {
-                //clear interval and pause audio
-                themeAudio.pause();
+                //clear interval and mute audio
+                themeAudio.muted = true;
+                soundOnButton.style.display = 'block';
+                soundOffButton.style.display = 'none';
 
                 clearInterval(intervalId);
             });
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
+                //unmute audio
+                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
+                soundOnButton.style.display = 'none';
+                soundOffButton.style.display = 'block';
             });
 
         })
