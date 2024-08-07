@@ -53,7 +53,7 @@
 function triviaGameSuperman() {
 
     //superman audio
-    audio = new Audio('./assets/audio/superman.mp3');
+    audio = new Audio('/assets/audio/superman.mp3');
     audio.play();
 
     //disable startGameSuperman button
@@ -64,7 +64,7 @@ function triviaGameSuperman() {
 
     setTimeout(function() {
         //fetch game data
-        fetch('./js/game-data/superman.json')
+        fetch('/js/game-data/superman.json')
 
         //parse the JSON data
         .then(response => response.json())
@@ -94,7 +94,7 @@ function triviaGameSuperman() {
             `;
 
             //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+            themeAudio = new Audio('/assets/audio/hero_theme.mp3');
 
             //store interval ID
             let intervalId;
@@ -150,7 +150,7 @@ function triviaGameSuperman() {
 function triviaGameBatman() {
 
     //batman audio
-    audio = new Audio('./assets/audio/im_batman.mp3');
+    audio = new Audio('/assets/audio/im_batman.mp3');
     audio.play();
 
     //disable batman game button
@@ -190,7 +190,7 @@ function triviaGameBatman() {
             `;
 
             //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+            themeAudio = new Audio('/assets/audio/hero_theme.mp3');
 
             //store interval ID
             let intervalId;
@@ -246,7 +246,7 @@ function triviaGameBatman() {
 function triviaGameWonderwoman() {
 
     //wonderwoman audio
-    audio = new Audio('./assets/audio/wonderwoman.mp3');
+    audio = new Audio('/assets/audio/wonderwoman.mp3');
     audio.play();
 
     //disable batman game button
@@ -256,7 +256,7 @@ function triviaGameWonderwoman() {
 
     setTimeout(function() {
         //get game data
-        fetch('./js/game-data/wonderwoman.json')
+        fetch('/js/game-data/wonderwoman.json')
 
         //parse json data
         .then(response => response.json())
@@ -286,7 +286,7 @@ function triviaGameWonderwoman() {
             `;
 
             //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+            themeAudio = new Audio('/assets/audio/hero_theme.mp3');
 
             //store interval ID
             let intervalId;
@@ -395,17 +395,17 @@ function displayNextQuestion() {
         let imageSrc;
 
         if (answersCorrect >= 3 && answersCorrect !=5) {
-            audio = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
+            audio = new Audio('/assets/audio/its_all_part_of_the_plan.mp3');
             audio.play();
-            imageSrc = './assets/images/joker.jpg';
+            imageSrc = '/assets/images/joker.jpg';
         } else if (answersCorrect === 5) {
-            audio = new Audio('./assets/audio/superman_intro.mp3')
+            audio = new Audio('/assets/audio/superman_intro.mp3')
             audio.play();
-            imageSrc = './assets/images/superman_1.jpg';
+            imageSrc = '/assets/images/superman_1.jpg';
         } else {
-            audio = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3')
+            audio = new Audio('/assets/audio/snag_im_having_a_bad_day.mp3')
             audio.play();
-            imageSrc = './assets/images/lex_luther.jpg';
+            imageSrc = '/assets/images/lex_luther.jpg';
         }
 
         document.getElementById('timer').textContent = null;
@@ -419,13 +419,13 @@ function displayNextQuestion() {
 
         let returnHome = document.getElementById('return-home');
         returnHome.addEventListener('click', function() {
-            audio = new Audio('./assets/sounds/game_over.mp3')
+            audio = new Audio('/assets/sounds/game_over.mp3')
             audio.play();
             setTimeout(redirectToHome, 2000);
         });
                       
         returnHome.addEventListener('touchend', function() {
-            audio = new Audio('./assets/sounds/game_over.mp3')
+            audio = new Audio('/assets/sounds/game_over.mp3')
             audio.play();
             setTimeout(redirectToHome, 2000);
         });
@@ -480,7 +480,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                  //get element
                 let background = document.getElementById('modal-content');
                 //change background image
-                background.style.backgroundImage = "url('.assets/images/superman_1.jpg')";
+                background.style.backgroundImage = "url('./assets/images/superman_1.jpg')";
                 answersCorrect++;
 
                 modalMessage.textContent = 'Correct!';
@@ -488,7 +488,7 @@ function attachAnswerListeners(shuffledAnswers, nextItem) {
                     //get element
                     let background = document.getElementById('modal-content');
                     //change background image
-                    background.style.backgroundImage = "url('.assets/images/joker.jpg')";
+                    background.style.backgroundImage = "url('./assets/images/joker.jpg')";
                     modalMessage.textContent = 'Incorrect. The correct answer was ' + nextItem.value.correctAnswer;
                 }
                 modal.style.display = "block";
