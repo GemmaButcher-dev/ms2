@@ -396,6 +396,10 @@ label:hover::after,
     bottom: 18px;
 }
 
+#sound-control p {
+    font-size: 0.5em;
+}
+
 /* #7 - media queries =================================== */
 
 @media screen and (min-width: 320px) {
