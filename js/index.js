@@ -388,6 +388,9 @@ let questionCounter = 0;
     if (nextItem.done) {
 
         stopTimer();
+        themeAudio();
+
+        themeAudio.currentTime = 0;
 
         document.getElementById('timer').textContent = null;
         gameArea.innerHTML = `<h1>You scored ${answersCorrect} out of ${amountOfQuestions}</h1>
