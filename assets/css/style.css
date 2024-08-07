@@ -374,6 +374,13 @@ label:hover::after,
     text-align: center;
 }
 
+/* #6.2 - variables =================================== */
+
+#start-game-superman,
+#start-game-batman {
+    margin-bottom: 2rem;
+}
+
 /* #6.6 - Sounds =================================== */
 
 .sound {
@@ -387,4 +394,33 @@ label:hover::after,
 #sound-control {
     position: absolute;
     bottom: 18px;
+}
+
+/* #7 - media queries =================================== */
+
+@media screen and (min-width: 320px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .welcome-img {
+        margin: 30px auto;
+    }
+
+    .welcome-container {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min width: 1440px) {
+
 }
