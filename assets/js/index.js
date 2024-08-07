@@ -91,7 +91,8 @@ function triviaGameSuperman() {
             // Insert HTML into the sound-control element
             soundControl.innerHTML = `
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
+                <p>Sound On/Off</p>
             `;
 
             //create new audio
@@ -160,6 +161,7 @@ function triviaGameBatman() {
 
     //batman audio
     audio = new Audio('/assets/audio/im_batman.mp3');
+    audio.muted = true; // muted by default
     audio.play();
 
     //disable batman game button
@@ -195,11 +197,13 @@ function triviaGameBatman() {
             // Insert HTML into the sound-control element
             soundControl.innerHTML = `
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
+                <p>Sound On/Off</p>
             `;
 
             //create new audio
             themeAudio = new Audio('/assets/audio/hero_theme.mp3');
+            themeAudio.muted = true; // muted by default
 
             //store interval ID
             let intervalId;
@@ -241,6 +245,8 @@ function triviaGameBatman() {
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
+                //unmute the audio
+                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
             });
@@ -256,9 +262,10 @@ function triviaGameWonderwoman() {
 
     //wonderwoman audio
     audio = new Audio('/assets/audio/wonderwoman.mp3');
+    audio.muted = true; // muted by default
     audio.play();
 
-    //disable batman game button
+    //disable wonderwoman game button
     startGameSuperman.disabled = true;
     startGameBatman.disabled = true;
     startGameWonderwoman.disabled = true;
@@ -291,11 +298,14 @@ function triviaGameWonderwoman() {
             // Insert HTML into the sound-control element
             soundControl.innerHTML = `
                 <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i>
+                <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
+                <p>Sound On/Off</p>
             `;
 
             //create new audio
             themeAudio = new Audio('/assets/audio/hero_theme.mp3');
+            //muted by default
+            themeAudio.muted = true;
 
             //store interval ID
             let intervalId;
@@ -337,6 +347,8 @@ function triviaGameWonderwoman() {
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
+                //unmute the audio
+                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
             })
