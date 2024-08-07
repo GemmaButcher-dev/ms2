@@ -401,7 +401,7 @@ function displayNextQuestion() {
         } else if (answersCorrect === 5) {
             audio = new Audio('./assets/sounds/superman_intro.mp3')
             audio.play();
-            imageSrc = './assets/images/superman_1';
+            imageSrc = './assets/images/superman_1.jpg';
         } else {
             audio = new Audio('./assets/sounds/snag_im_having_a_bad_day.mp3')
             audio.play();
