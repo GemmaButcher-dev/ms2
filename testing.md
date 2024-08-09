@@ -5,12 +5,13 @@
   1. [Overall Peformance](#overall-performance)
   2. [Code Validation](#code-validation)
   3. [Accessibility Testing](#accessibility-testing)
-  4. [Bug Fixes](#bug-fixes)
-  5. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
+  4. [JavaScript Testing](#javascript-testing)
+  5. [Bug Fixes](#bug-fixes)
+  6. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
         * Project Goals
         * Players Goals
         * Super Squad helps players meet these goals by:
-  6. [Further Testing](#further-testing)
+  7. [Further Testing](#further-testing)
 
   ------
 
@@ -18,7 +19,21 @@
 
 ## Code Validation
 
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. The results and screenshots are in the table below.
+
+| Page                | Screenshot     | Notes  |
+|---------------------|----------------|--------|
+|Start Screen         |![screenshot]() | Passed |
+|Question Screen      |![screenshot]() | Passed |
+|Answer Modal Screen  |![screenshot]() | Passed |
+|Result Screen        |![screenshot]() | Passed |
+|404                  |![screenshot]() | Passed | 
+|CSS                  |![screenshot]() | Passed |
+
+
 ## Accesibility Testing
+
+## JavaScript Testing
 
 ## Bug Fixes
 
