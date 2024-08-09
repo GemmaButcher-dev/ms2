@@ -19,9 +19,9 @@
 
 The complete site was tested on the lighthouse facility in Google Developer Tools to assess the overall performance of the site. The site meets the pass criteria and you can see the results in the below table.
 
-| Page                | Screenshot     | Notes  |
-|---------------------|----------------|--------|
-|Start Screen         |![screenshot]() | Passed |
+| Page                | Screenshot                                      | Notes  |
+|---------------------|-------------------------------------------------|--------|
+|Start Screen         |![screenshot](docs/testing/lighthouse_start.png) | Passed |
 |Question Screen      |![screenshot]() | Passed |
 |Answer Modal Screen  |![screenshot]() | Passed |
 |Result Screen        |![screenshot]() | Passed |
