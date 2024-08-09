@@ -17,6 +17,17 @@
 
 ## Overall Performance
 
+The complete site was tested on the lighthouse facility in Google Developer Tools to assess the overall performance of the site. The site meets the pass criteria and you can see the results in the below table.
+
+| Page                | Screenshot     | Notes  |
+|---------------------|----------------|--------|
+|Start Screen         |![screenshot]() | Passed |
+|Question Screen      |![screenshot]() | Passed |
+|Answer Modal Screen  |![screenshot]() | Passed |
+|Result Screen        |![screenshot]() | Passed |
+|404                  |![screenshot]() | Passed | 
+|CSS                  |![screenshot]() | Passed |
+
 ## Code Validation
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. The results and screenshots are in the table below.
