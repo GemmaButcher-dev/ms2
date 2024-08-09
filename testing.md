@@ -37,8 +37,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Accesibility Testing
 
-    * The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here](docs/testing/webaim.png).
-    
+    * The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here](docs/testing/webaim.png). There was a minor warning where the icon was being detected as a h2, although not being used or labelled as a h2.
+
 ## JavaScript Testing
 
 ## Bug Fixes
