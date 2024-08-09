@@ -89,6 +89,10 @@ main {
 
 header {
     width: 100%;
+    border-bottom: 1px solid #ffffff92;
+    box-shadow: 0 0 5px 3px #ffffff92;
+    background-color: #212121af;
+    padding: 0.5rem;
 }
                  
 .logo {
@@ -149,6 +153,11 @@ footer {
     height: 100%;
     animation: fadein 1500ms;
     animation-delay: 0.5s;
+}
+
+.intro-container {
+    background-color: #212121af;
+    margin: 1rem 0 2rem 0;
 }
 
 /*game area*/
