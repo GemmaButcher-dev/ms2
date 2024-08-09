@@ -21,7 +21,7 @@ The complete site was tested on the lighthouse facility in Google Developer Tool
 
 | Page                | Screenshot                                      | Notes                                                        |
 |---------------------|-------------------------------------------------|--------------------------------------------------------------|
-|Start Screen         |![screenshot](docs/testing/lighthouse_start.png) | Minor improvements for performance                           |
+|Start/Home Screen    |![screenshot](docs/testing/lighthouse_start.png) | Minor improvements for performance                           |
 |404                  |![screenshot](docs/testing/lighthouse_404.png)   | No warnings. Possible minor improvements. 100% accessibility |
 
 ## Code Validation
@@ -30,7 +30,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 | Page                | Screenshot                               | Notes  |
 |---------------------|------------------------------------------|--------|
-|Start Screen         |![screenshot](docs/testing/index_w3c.png) | Passed |
+|Start/Home Screen    |![screenshot](docs/testing/index_w3c.png) | Passed |
 |404                  |![screenshot](docs/testing/404_w3c.png)   | Passed | 
 |CSS                  |![screenshot](docs/testing/css_w3c.png)   | Passed |
 
