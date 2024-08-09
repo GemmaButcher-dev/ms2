@@ -117,6 +117,9 @@ Player and guardian goals are:
 ## Technologies Used
 
 ### Languages Used
+ * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * JavaScript
 
 ### Frameworks, Programs and Libraries Used
 
