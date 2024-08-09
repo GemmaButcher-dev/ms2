@@ -37,6 +37,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Accesibility Testing
 
+    * The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here](docs/testing/webaim.png).
+    
 ## JavaScript Testing
 
 ## Bug Fixes
