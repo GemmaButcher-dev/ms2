@@ -32,9 +32,9 @@ The complete site was tested on the lighthouse facility in Google Developer Tool
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. The results and screenshots are in the table below.
 
-| Page                | Screenshot     | Notes  |
-|---------------------|----------------|--------|
-|Start Screen         |![screenshot]() | Passed |
+| Page                | Screenshot                               | Notes  |
+|---------------------|------------------------------------------|--------|
+|Start Screen         |![screenshot](docs/testing/index_w3c.png) | Passed |
 |Question Screen      |![screenshot]() | Passed |
 |Answer Modal Screen  |![screenshot]() | Passed |
 |Result Screen        |![screenshot]() | Passed |
