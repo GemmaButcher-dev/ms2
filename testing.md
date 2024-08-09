@@ -22,11 +22,7 @@ The complete site was tested on the lighthouse facility in Google Developer Tool
 | Page                | Screenshot                                      | Notes  |
 |---------------------|-------------------------------------------------|--------|
 |Start Screen         |![screenshot](docs/testing/lighthouse_start.png) | Passed |
-|Question Screen      |![screenshot]() | Passed |
-|Answer Modal Screen  |![screenshot]() | Passed |
-|Result Screen        |![screenshot]() | Passed |
-|404                  |![screenshot]() | Passed | 
-|CSS                  |![screenshot]() | Passed |
+|404                  |![screenshot](docs/testing/lighthouse_404.png)   | Passed |
 
 ## Code Validation
 
@@ -35,11 +31,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Page                | Screenshot                               | Notes  |
 |---------------------|------------------------------------------|--------|
 |Start Screen         |![screenshot](docs/testing/index_w3c.png) | Passed |
-|Question Screen      |![screenshot]() | Passed |
-|Answer Modal Screen  |![screenshot]() | Passed |
-|Result Screen        |![screenshot]() | Passed |
-|404                  |![screenshot]() | Passed | 
-|CSS                  |![screenshot]() | Passed |
+|404                  |![screenshot](docs/testing/404_w3c.png)   | Passed | 
+|CSS                  |![screenshot](docs/testing/css_w3c.png)   | Passed |
 
 
 ## Accesibility Testing
