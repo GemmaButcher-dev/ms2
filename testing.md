@@ -41,12 +41,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## JavaScript Testing
 
-  * The JavaScript code was put though JS Hint which intially flagged some missing semi colons which were corrected and removed the warnings. Further testing was then undertaken to indicate any further warnings.
+  * The JavaScript code was put though JS Hint which intially flagged ES6 warnings and some missing semi colons, and one unused variable. It was tested without telling js hint the code is written in ES6 version and it came up with warning for the 'let' variable used as this is not supported in the earlier ES5/ES2015 version. Some browsers do not support ES6 although this is uncommon. Further testing was then undertaken while informing JS Hint that the code is written in ES6 by adding this comment '/* jshint esversion: 6 */' to the top of the code. This returned missing semi-colon warnings which were corrected and an unused declared variable that was removed and the website re-tested. Removing the variable has not caused any bugs to fix.
 
-| Test          | Screenshot                                    | Notes                                          |
-|---------------|-----------------------------------------------|------------------------------------------------|
-| Initial test  |![screenshot](docs/testing/jshint_initial.png) | Missing semi colons added and variable removed |
-| Re-test       |![screenshot](docs/testing/jshint_retest.png)  | Passed - No warnings                           | 
+| Test      | Screenshot                                     | Notes                                                |
+|-----------|------------------------------------------------|------------------------------------------------------|
+| ES5       |![screenshot](docs/testing/jshint_es5.png)      | ES6 warnings, missing semi colon and unused variable |
+| Re-test 1 |![screenshot](docs/testing/jshint_retest_1.png) | Missing semi-colons and unused variable              | 
+| Re-test 2 |![screenshot](docs/testing/jshint_retest_2.png) | Passed - No warnings                                 |
 
 
 ## Bug Fixes
