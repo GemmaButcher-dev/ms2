@@ -129,9 +129,11 @@ Player and guardian goals are:
 
    #### Results Page
 
+   * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions they answered. The results page has a image and sound clip dependending on theor score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
+
    #### Sound Button
 
-   
+
 
    #### 404 Page
 
