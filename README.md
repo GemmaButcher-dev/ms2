@@ -16,6 +16,13 @@ Welcome to
 
 2. [Features](#features)
 
+   * Header Area
+   * Game Area
+   * Multi-Choice Questions
+   * Results Page
+   * Sound Button
+   * 404 Page
+
   * Existing Features
   * Features left to implement
 
@@ -74,7 +81,7 @@ Player and guardian goals are:
     Super Squad provides:
      * Displays to the users if their answer was correct or incorrect.
 
- 5. As a player I want to go to the next question after recieving feedback from the current one so I can   continue to play the quiz.
+ 5. As a player I want to go to the next question after recieving feedback from the current one so I can continue to play the quiz and increase my knowledge base.
 
     Super Squad provides:
      * A next question button allowing the player to continue with the quiz after recieving feedback.
@@ -89,7 +96,7 @@ Player and guardian goals are:
 
     Super Squad provides:
      * There is a restart button  in the game area on the homepage.
-     * On selecting the restart button a new quiz game is started from the firdt question.
+     * On selecting the restart button a new quiz game is started from the first question.
 
  8. As a player i want the quiz to be engaging and fun with relevant images and sound.
 
@@ -111,6 +118,22 @@ Player and guardian goals are:
 ## Features
 
 ### Existing Features
+
+   #### Game Area
+
+   * The home page largely consists of a game area which presents 3 choices of game topic to the user. The choices are Superman, Batman or Wonderwoman. There are hero appropriate sound effects when a theme button is clicked.
+
+   #### Multi-Choice Questions
+
+   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer. A modal appears when an answer is clicked and will let the user know if they were correct or not and what the correct answer was.
+
+   #### Results Page
+
+   #### Sound Button
+
+   
+
+   #### 404 Page
 
 ### Features Left To Implement
 
