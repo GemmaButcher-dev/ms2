@@ -2,7 +2,7 @@
     // Game Logic
 
     //Declare Game Variables
-    let correctAnswer;
+    //let correctAnswer;
     let audio;
     let themeAudio;
     let amountOfQuestions;
@@ -351,7 +351,7 @@ function triviaGameWonderwoman() {
                 themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
-            })
+            });
 
         })
             // error handling
@@ -420,11 +420,11 @@ function displayNextQuestion() {
             audio.play();
             imageSrc = './assets/images/joker.jpg';
         } else if (answersCorrect === 5) {
-            audio = new Audio('./assets/audio/superman_intro.mp3')
+            audio = new Audio('./assets/audio/superman_intro.mp3');
             audio.play();
             imageSrc = './assets/images/superman_1.jpg';
         } else {
-            audio = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3')
+            audio = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3');
             audio.play();
             imageSrc = './assets/images/lex_luther.jpg';
         }
@@ -446,7 +446,7 @@ function displayNextQuestion() {
         });
                       
         returnHome.addEventListener('touchend', function() {
-            audio = new Audio('./assets/sounds/game_over.mp3')
+            audio = new Audio('./assets/sounds/game_over.mp3');
             audio.play();
             setTimeout(redirectToHome, 2000);
         });
