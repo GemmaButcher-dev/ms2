@@ -1,7 +1,7 @@
 Welcome to
 
 # 🦸🏻‍♀️ Super Squad 🦸🏼‍♂️
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![device mockup](docs/testing/amiresponsive.png)
 
 [View the live project here!] (https://gemmabutcher-dev.github.io/ms2/)
 
