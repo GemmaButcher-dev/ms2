@@ -41,6 +41,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## JavaScript Testing
 
+  * The JavaScript code was put though JS Hint which intially flagged some missing semi colons which were corrected and removed the warnings. Further testing was then undertaken to indicate any further warnings.
+
+| Test         | Screenshot                                    | Notes                                          |
+|--------------|-----------------------------------------------|------------------------------------------------|
+|Initial test  |![screenshot](docs/testing/jshint_initial.png) | Missing semi colons added and variable removed |
+|Re-test       |![screenshot](docs/testing/jshint_retest.png)  | Passed - No warnings                           | 
+
+
 ## Bug Fixes
 
 ## Testing User Stories from User Experience (UX) Section
