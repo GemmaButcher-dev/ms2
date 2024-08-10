@@ -6,6 +6,8 @@
   2. [Code Validation](#code-validation)
   3. [Accessibility Testing](#accessibility-testing)
   4. [JavaScript Testing](#javascript-testing)
+        * JS Hint
+        
   5. [Bug Fixes](#bug-fixes)
   6. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
         * Project Goals
@@ -40,6 +42,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     * The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here for index.html](docs/testing/webaim.png) and [viewed here for 404.html](docs/testing/webaim_404.png). There was a minor warning where the icon was being detected as a h2, although not being used or labelled as a h2.
 
 ## JavaScript Testing
+
+### JS Hint
 
   * The JavaScript code was put though [JS Hint](https://jshint.com/) which intially flagged ES6 warnings and some missing semi colons, and one unused variable. It was tested without telling JS Hint the code is written in ES6 version and it came up with warning for the 'let' variable used as this is not supported in the earlier ES5/ES2015 version. Some browsers do not support ES6 although this is uncommon. Further testing was then undertaken while informing JS Hint that the code is written in ES6 by adding this comment '/* jshint esversion: 6 */' to the top of the code. This returned missing semi-colon warnings which were corrected and an unused declared variable that was removed and the website re-tested. Removing the variable has not caused any bugs to fix.
 
