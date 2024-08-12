@@ -139,7 +139,7 @@ Player and guardian goals are:
 
    #### Modal
 
-   * A modal appears when the user selects an answer and will let the user know if they were correct or not and what the correct answer was. If the user does not select a question within the given 10 second time limit the modal will inform the user that they are out of time.
+   * A modal appears when the user selects an answer and will let the user know if they were correct or not and what the correct answer was. If the user does not select a question within the given 10 second time limit the modal will inform the user that they are out of time. The background image changes depending on whether the user uis correct, incorrect or out of time. This is shown below.
 
 | Modal            | Example Image                                        |
 |------------------|------------------------------------------------------|
