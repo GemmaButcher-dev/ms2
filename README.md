@@ -23,9 +23,7 @@ Welcome to
    * Results Page
    * Sound Button
    * 404 Page
-
-  * Existing Features
-  * Features left to implement
+   * Features left to implement
 
 3. [Technologies used](#technologies-used)
 
