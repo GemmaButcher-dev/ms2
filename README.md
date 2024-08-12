@@ -89,19 +89,21 @@ Player and guardian goals are:
  6. As a player i would like to see my final score at the end of the quiz to know how good my knowledge is.
 
     Super Squad provides:
-     * A score is displayed after answering all questions. 
+     * A score displayed after answering all questions. 
      * The score is a total of correct answers scored throughout the quiz game.
 
  7. As a player I want to be able to restart the quiz to attempt the quiz again and improve my score.
 
     Super Squad provides:
-     * There is a restart button  in the game area on the homepage.
+     * A restart button in the game area on the homepage.
      * On selecting the restart button a new quiz game is started from the first question.
 
  8. As a player i want the quiz to be engaging and fun with relevant images and sound.
 
     Super Squad provides:
      * Images relevant to a superhero theme.
+     * Sound effects and theme audio throughout the game relevant to the superhero chosen.
+     * A sound on and off button.
 
 ### Design Choices
 
