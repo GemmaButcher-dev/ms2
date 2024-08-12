@@ -19,6 +19,7 @@ Welcome to
    * Header Area
    * Game Area
    * Multi-Choice Questions
+   * Modal
    * Results Page
    * Sound Button
    * 404 Page
@@ -129,15 +130,27 @@ Player and guardian goals are:
 
    * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer. A modal appears when an answer is clicked and will let the user know if they were correct or not and what the correct answer was.
 
+   #### Modal
+
+   *
+
+| Modal            | Example Image                                        |
+|------------------|------------------------------------------------------|
+| correct answer   | ![screenshot](docs/design/superman_modal_answer.png) |
+| incorrect answer | ![screenshot](docs/design/joker_answer_modal.png)    |
+| time is up       | ![screenshot](docs/design/time_up.png)               |
+
+
+
    #### Results Page
 
    * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions they answered. The results page has a image and sound clip dependending on theor score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
 
-| Score      | Example Image                                   | Sounds                                                   |
-|------------|-------------------------------------------------|----------------------------------------------------------|
-| 0/5 - 2/5  |![screenshot](docs/design/lex_luther_result.png) | ![sound clip](assets/audio/snag_im_having_a_bad_day.mp3) |
-| 3/5 & 4/5  |![screenshot](docs/design/joker_score.png)       | ![sound clip](assets/audio/its_all_part_of_the_plan.mp3) |
-| 5/5        |![screenshot](docs/design/superman_result.png)   | ![sound clip](assets/audio/superman_intro.mp3)           |
+| Score      | Example Image                                    | Sounds                                                   |
+|------------|--------------------------------------------------|----------------------------------------------------------|
+| 0/5 - 2/5  | ![screenshot](docs/design/lex_luther_result.png) | ![sound clip](assets/audio/snag_im_having_a_bad_day.mp3) |
+| 3/5 & 4/5  | ![screenshot](docs/design/joker_score.png)       | ![sound clip](assets/audio/its_all_part_of_the_plan.mp3) |
+| 5/5        | ![screenshot](docs/design/superman_result.png)   | ![sound clip](assets/audio/superman_intro.mp3)           |
 
    #### Sound Button
 
