@@ -21,7 +21,8 @@ Welcome to
    * Multi-Choice Questions
    * Timer
    * Modal
-   * Results Page
+   * Results Feature
+   * Restart Quiz Button
    * Sound Button
    * 404 Page
    * Features left to implement
@@ -158,15 +159,21 @@ Player and guardian goals are:
 
 
 
-   #### Results Page
+   #### Results Feature
 
-   * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions they answered. The results page has a image and sound clip dependending on theor score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
+   * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions they answered. The results page has an image and sound clip dependending on their score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
 
 | Score      | Example Image                                    | Sounds                                                   |
 |------------|--------------------------------------------------|----------------------------------------------------------|
 | 0/5 - 2/5  | ![screenshot](docs/design/lex_luther_result.png) | ![sound clip](assets/audio/snag_im_having_a_bad_day.mp3) |
 | 3/5 & 4/5  | ![screenshot](docs/design/joker_score.png)       | ![sound clip](assets/audio/its_all_part_of_the_plan.mp3) |
 | 5/5        | ![screenshot](docs/design/superman_result.png)   | ![sound clip](assets/audio/superman_intro.mp3)           |
+
+   #### Restart Quiz Button
+
+   * A restart button is located underneath the results image that takes the user back to the game selection options.
+
+   ![screenshot](docs/design/restart_quiz_button.png)
 
    #### Sound Button
 
