@@ -170,7 +170,9 @@ Player and guardian goals are:
 
    #### Sound Button
 
+   * There is a sound button with a label set to muted by default.
 
+   ![screenshot](docs/design/timer.png)
 
    #### 404 Page
 
