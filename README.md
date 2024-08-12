@@ -106,11 +106,20 @@ Player and guardian goals are:
 
 ### Design Choices
 
+   * Mobile first, single column responsive design. 
+
 #### Colour Scheme
 
  The global colour selection for Super Squad is shown below.
 
+ * red #ff0000
+ * white #ffffff
+ * black #000000
+
 #### Typography
+
+   * The Exo+2 google font with a fall back font of sans-serif should the font nopt load correctly. It is used for the header logo text, introduction text and footer.
+   * Supernova 2 font from cdn fonts is used for the game selection buttons text with a fall back font of sans serif should it noit load correctly. This font has a fun and slightly dramatic comic characteristics whilst remaining legible. 
 
 #### Imagery
 
