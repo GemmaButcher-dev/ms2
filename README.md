@@ -176,6 +176,10 @@ Player and guardian goals are:
 
    #### 404 Page
 
+   * A 404 page is navigated to when an error occurs or the website wont load. The page explains to the user that there is an issue and offers a button to navigate back to the homepage/index.html.
+
+   ![screenshot](docs/design/404.png)
+
 ### Features Left To Implement
 
 ## Technologies Used
