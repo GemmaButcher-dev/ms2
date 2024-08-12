@@ -21,25 +21,28 @@
     let startGameSuperman = document.getElementById('start-game-superman');
 
     startGameSuperman.addEventListener('click', triviaGameSuperman);
+
     startGameSuperman.addEventListener('click', function() {
-            document.body.style.backgroundImage = './assets/images/superman-background.jpg';
-        });
+        document.body.style.backgroundImage = './assets/images/superman-background.jpg';
+    });
 
     // Batman mode - game trigger
     let startGameBatman = document.getElementById('start-game-batman');
 
     startGameBatman.addEventListener('click', triviaGameBatman);
+
     startGameBatman.addEventListener('click', function() {
         document.body.style.backgroundImage = './assets/images/batman_background.jpg';
     });
 
     // Wonderwoman mode - game trigger
     let startGameWonderwoman = document.getElementById('start-game-wonderwoman');
+
+    startGameWonderwoman.addEventListener('click', triviaGameWonderwoman);
+    
     startGameBatman.addEventListener('click', function() {
         document.body.style.backgroundImage = './assets/images/wonderwoman_background.jpg';
     });
-
-    startGameWonderwoman.addEventListener('click', triviaGameWonderwoman);
 
 // Start Superman game
 function triviaGameSuperman() {
