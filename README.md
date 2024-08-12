@@ -19,6 +19,7 @@ Welcome to
    * Header Area
    * Game Area
    * Multi-Choice Questions
+   * Timer
    * Modal
    * Results Page
    * Sound Button
@@ -135,7 +136,15 @@ Player and guardian goals are:
 
    #### Multi-Choice Questions
 
-   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer.
+   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer. 
+
+   ![screenshot](docs/design/questions.png)
+
+   #### Timer
+
+   * The timer shows the user how much time they have to answer the questions and counts down from 10 to 0. The timer resets for each question.
+
+   ![screenshot](docs/design/timer.png)
 
    #### Modal
 
