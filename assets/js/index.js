@@ -1,6 +1,37 @@
 //document.addEventListener('DOMContentLoaded', (event) => {
     // Game Logic
 
+    //game audio
+    let audio1 = new Audio('./assets/audio/hero_theme.mp3');
+    let audio2 = new Audio('./assets/audio/superman.mp3');
+    let audio3 = new Audio('./assets/audio/im_batman.mp3');
+    let audio4 = new Audio('./assets/audio/wonderwoman.mp3');
+    let audio5 = new Audio('./assets/audio/game_over.mp3');
+    let audio6 = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3');
+    let audio7 = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
+    let audio8 = new Audio('./assets/audio/superman_intro.mp3');
+
+    //mute audio
+    audio1.muted = true;
+    audio2.muted = true;
+    audio3.muted = true;
+    audio4.muted = true;
+    audio5.muted = true;
+    audio6.muted = true;
+    audio7.muted = true;
+    audio8.muted = true;
+
+    let muted = true;
+
+   // function toggleMute() {
+   //     if muted {
+   //         audio.all//mute all audio
+   //     } else {
+   //         ///unmute all of the audio
+   //     }
+   //}
+
+
     //Declare Game Variables
     //let correctAnswer;
     let audio;
@@ -39,7 +70,7 @@
     let startGameWonderwoman = document.getElementById('start-game-wonderwoman');
 
     startGameWonderwoman.addEventListener('click', triviaGameWonderwoman);
-    
+
     startGameBatman.addEventListener('click', function() {
         document.body.style.backgroundImage = './assets/images/wonderwoman_background.jpg';
     });
@@ -48,9 +79,7 @@
 function triviaGameSuperman() {
 
     //superman audio
-    audio = new Audio('./assets/audio/superman.mp3');
-    audio.muted = true; // muted by default
-    audio.play();
+    audio2.play();
 
     //disable startGameSuperman button
     startGameSuperman.disabled = true;
@@ -92,7 +121,7 @@ function triviaGameSuperman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
-            themeAudio.muted = true; //muted by default
+    
 
 
             //store interval ID
@@ -137,8 +166,6 @@ function triviaGameSuperman() {
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
-                //unmute audio
-                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
                 soundOnButton.style.display = 'none';
@@ -155,9 +182,7 @@ function triviaGameSuperman() {
 function triviaGameBatman() {
 
     //batman audio
-    audio = new Audio('./assets/audio/im_batman.mp3');
-    audio.muted = true; // muted by default
-    audio.play();
+    audio3.play();
 
     //disable batman game button
     startGameSuperman.disabled = true;
@@ -187,7 +212,7 @@ function triviaGameBatman() {
             displayNextQuestion();
 
             //get sound control element
-            let soundControl = document.getElementById('sound-control');
+            //let soundControl = document.getElementById('sound-control');
 
             // Insert HTML into the sound-control element
             soundControl.innerHTML = `
@@ -198,7 +223,6 @@ function triviaGameBatman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
-            themeAudio.muted = true; // muted by default
 
             //store interval ID
             let intervalId;
@@ -234,14 +258,10 @@ function triviaGameBatman() {
             soundOffButton.addEventListener('click', function() {
                 //clear interval and pause audio
                 themeAudio.pause();
-
-                clearInterval(intervalId);
             });
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
-                //unmute the audio
-                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
             });
@@ -256,9 +276,7 @@ function triviaGameBatman() {
 function triviaGameWonderwoman() {
 
     //wonderwoman audio
-    audio = new Audio('./assets/audio/wonderwoman.mp3');
-    audio.muted = true; // muted by default
-    audio.play();
+    audio4.play();
 
     //disable wonderwoman game button
     startGameSuperman.disabled = true;
@@ -299,8 +317,6 @@ function triviaGameWonderwoman() {
 
             //create new audio
             themeAudio = new Audio('./assets/audio/hero_theme.mp3');
-            //muted by default
-            themeAudio.muted = true;
 
             //store interval ID
             let intervalId;
@@ -337,13 +353,10 @@ function triviaGameWonderwoman() {
                 //clear interval and pause audio
                 themeAudio.pause();
 
-                clearInterval(intervalId);
             });
 
             //sound on event listener
             soundOnButton.addEventListener('click', function() {
-                //unmute the audio
-                themeAudio.muted = false;
                 //set interval and play audio
                 themeAudio.play();
             });
@@ -411,16 +424,13 @@ function displayNextQuestion() {
         let imageSrc;
 
         if (answersCorrect >= 3 && answersCorrect !=5) {
-            audio = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
-            audio.play();
+            audio7.play();
             imageSrc = './assets/images/joker.jpg';
         } else if (answersCorrect === 5) {
-            audio = new Audio('./assets/audio/superman_intro.mp3');
-            audio.play();
+            audio8.play();
             imageSrc = './assets/images/superman_1.jpg';
         } else {
-            audio = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3');
-            audio.play();
+            audio6.play();
             imageSrc = './assets/images/lex_luther.jpg';
         }
 
@@ -435,14 +445,12 @@ function displayNextQuestion() {
 
         let returnHome = document.getElementById('return-home');
         returnHome.addEventListener('click', function() {
-            audio = new Audio('./assets/sounds/game_over.mp3')
-            audio.play();
+            audio5.play();
             setTimeout(redirectToHome, 2000);
         });
                       
         returnHome.addEventListener('touchend', function() {
-            audio = new Audio('./assets/sounds/game_over.mp3');
-            audio.play();
+            audio5.play();
             setTimeout(redirectToHome, 2000);
         });
             
