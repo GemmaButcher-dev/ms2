@@ -41,23 +41,6 @@
 
     startGameWonderwoman.addEventListener('click', triviaGameWonderwoman);
 
-
-    //new listeners code - needs revision
-    //document.getElementById('start-game-superman').addEventListener('click', function() {
-    //    document.body.style.backgroundImage = "url('./assets/images/superman-background.jpg')";
-    //    triviaSuperman();
-    //});
-
-    //document.getElementById('start-game-batman').addEventListener('click', function() {
-    //    document.body.style.backgroundImage = "url('./assets/images/batman-background.jpg')";
-    //    triviaBatman();
-    //});
-
-    //document.getElementById('start-game-wonderwoman').addEventListener('click', function() {
-    //    document.body.style.backgroundImage = "url('./assets/images/wonderwoman-background.jpg')";
-    //    triviaWonderwoman();
-    //});
-
 // Start Superman game
 function triviaGameSuperman() {
 
