@@ -118,8 +118,8 @@ Player and guardian goals are:
 
 #### Typography
 
-   * The Exo+2 google font with a fall back font of sans-serif should the font nopt load correctly. It is used for the header logo text, introduction text and footer.
-   * Supernova 2 font from cdn fonts is used for the game selection buttons text with a fall back font of sans serif should it noit load correctly. This font has a fun and slightly dramatic comic characteristics whilst remaining legible. 
+   * The Exo+2 google font with a fall back font of sans-serif should the font fail to load. It is used for the header logo text, introduction text and footer.
+   * Supernova 2 font from cdn fonts is used for the game selection buttons text with a fall back font of sans serif should it fail to load. This font has a fun and slightly dramatic comic characteristics whilst remaining legible. 
 
 #### Imagery
 
@@ -135,11 +135,11 @@ Player and guardian goals are:
 
    #### Multi-Choice Questions
 
-   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer. A modal appears when an answer is clicked and will let the user know if they were correct or not and what the correct answer was.
+   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer.
 
    #### Modal
 
-   *
+   * A modal appears when the user selects an answer and will let the user know if they were correct or not and what the correct answer was. If the user does not select a question within the given 10 second time limit the modal will inform the user that they are out of time.
 
 | Modal            | Example Image                                        |
 |------------------|------------------------------------------------------|
