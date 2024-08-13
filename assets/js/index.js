@@ -2,40 +2,58 @@
     // Game Logic
 
     //game audio
-    let audio1 = new Audio('./assets/audio/hero_theme.mp3');
-    let audio2 = new Audio('./assets/audio/superman.mp3');
-    let audio3 = new Audio('./assets/audio/im_batman.mp3');
-    let audio4 = new Audio('./assets/audio/wonderwoman.mp3');
-    let audio5 = new Audio('./assets/audio/game_over.mp3');
-    let audio6 = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3');
-    let audio7 = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
-    let audio8 = new Audio('./assets/audio/superman_intro.mp3');
+let themeAudio = new Audio('./assets/audio/hero_theme.mp3');
+let audio2 = new Audio('./assets/audio/superman.mp3');
+let audio3 = new Audio('./assets/audio/im_batman.mp3');
+let audio4 = new Audio('./assets/audio/wonderwoman.mp3');
+let audio5 = new Audio('./assets/audio/game_over.mp3');
+let audio6 = new Audio('./assets/audio/snag_im_having_a_bad_day.mp3');
+let audio7 = new Audio('./assets/audio/its_all_part_of_the_plan.mp3');
+let audio8 = new Audio('./assets/audio/superman_intro.mp3');
+
+
 
     //mute audio
-    audio1.muted = true;
-    audio2.muted = true;
-    audio3.muted = true;
-    audio4.muted = true;
-    audio5.muted = true;
-    audio6.muted = true;
-    audio7.muted = true;
-    audio8.muted = true;
+themeAudio.muted = true;
+audio2.muted = true;
+audio3.muted = true;
+audio4.muted = true;
+audio5.muted = true;
+audio6.muted = true;
+audio7.muted = true;
+audio8.muted = true;
 
-    let muted = true;
+let muted = true;
 
-   // function toggleMute() {
-   //     if muted {
-   //         audio.all//mute all audio
+function toggleMute() {
+   //     if muted
+    muted = !muted;
+    // toggle muted state for all audio elements
+    themeAudio.muted = muted;
+    audio2.muted = muted;
+    audio3.muted = muted;
+    audio4.muted = muted;
+    audio5.muted = muted;
+    audio6.muted = muted;
+    audio7.muted = muted;
+    audio8.muted = muted;
+}
+   //         let muted = false;
+   //         //unmute all audio
    //     } else {
+   //          let muted = true;
    //         ///unmute all of the audio
    //     }
    //}
 
+let muteButton = document.getElementById('muteButton');
+if (muteButton) {
+    muteButton.addEventListener('click', toggleMute)
+}
 
     //Declare Game Variables
     //let correctAnswer;
     let audio;
-    let themeAudio;
     let amountOfQuestions;
     let answersCorrect = 0;
     let timer;
@@ -119,11 +137,6 @@ function triviaGameSuperman() {
                 <p>Sound On/Off</p>
             `;
 
-            //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
-    
-
-
             //store interval ID
             let intervalId;
 
@@ -133,25 +146,26 @@ function triviaGameSuperman() {
                 themeAudio.play();
             }, 30000); // 30000 milliseconds = 30 seconds
 
-            //get sounds-off and sound-on buttons
-            let soundOffButton = document.querySelector('.sound-off');
-            let soundOnButton = document.querySelector('.sound-on');
+            // //get sounds-off and sound-on buttons
+             let soundOffButton = document.querySelector('.sound-off');
+             let soundOnButton = document.querySelector('.sound-on');
 
-            //play music event listener
-            themeAudio.addEventListener('play', function() {
-                //hide sound on and show sound off
+             //play music event listener
+             themeAudio.addEventListener('play', function() {
+
+                 //hide sound on and show sound off
                 soundOnButton.style.display = 'none';
-                soundOffButton.style.display = 'block';
-            });
+                 soundOffButton.style.display = 'block';
+             });
 
-            //pause music event listener
-            themeAudio.addEventListener('pause', function() {
-                //hide sound off and show sound on
-                soundOffButton.style.display = 'none';
-                soundOnButton.style.display = 'block';
-            });
+             //pause music event listener
+             themeAudio.addEventListener('pause', function() {
+                 //hide sound off and show sound on
+                 soundOffButton.style.display = 'none';
+                 soundOnButton.style.display = 'block';
+             });
 
-            //play audio
+             //play audio
             themeAudio.play();
 
             //sound off event listener
@@ -212,7 +226,7 @@ function triviaGameBatman() {
             displayNextQuestion();
 
             //get sound control element
-            //let soundControl = document.getElementById('sound-control');
+            let soundControl = document.getElementById('sound-control');
 
             // Insert HTML into the sound-control element
             soundControl.innerHTML = `
@@ -221,8 +235,6 @@ function triviaGameBatman() {
                 <p>Sound On/Off</p>
             `;
 
-            //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
 
             //store interval ID
             let intervalId;
@@ -314,9 +326,6 @@ function triviaGameWonderwoman() {
                 <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
                 <p>Sound On/Off</p>
             `;
-
-            //create new audio
-            themeAudio = new Audio('./assets/audio/hero_theme.mp3');
 
             //store interval ID
             let intervalId;
