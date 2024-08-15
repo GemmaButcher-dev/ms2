@@ -38,13 +38,6 @@ function toggleMute() {
     audio7.muted = muted;
     audio8.muted = muted;
 }
-   //         let muted = false;
-   //         //unmute all audio
-   //     } else {
-   //          let muted = true;
-   //         ///unmute all of the audio
-   //     }
-   //}
 
 let muteButton = document.getElementById('muteButton');
 if (muteButton) {
@@ -74,7 +67,6 @@ if (muteButton) {
     startGameSuperman.addEventListener('click', function() {
 
         document.body.style.backgroundImage = "url('/assets/images/superman_background.jpg')";
-        // document.body.style.backgroundImage = './assets/images/superman-background.jpg';
 
     });
 
@@ -87,7 +79,6 @@ if (muteButton) {
     startGameBatman.addEventListener('click', function() {
 
         document.body.style.backgroundImage = "url('/assets/images/batman_background.jpg')";
-       // document.body.style.backgroundImage = './assets/images/batman_background.jpg';
     });
 
     // Wonderwoman mode - game trigger
@@ -99,7 +90,6 @@ if (muteButton) {
     startGameWonderwoman.addEventListener('click', function() {
 
         document.body.style.backgroundImage = "url('/assets/images/wonderwoman_background.jpg')";
-        //document.body.style.backgroundImage = './assets/images/wonderwoman_background.jpg';
     });
 
 // Start Superman game
@@ -136,16 +126,6 @@ function triviaGameSuperman() {
             //show first question
             displayNextQuestion();
 
-            //get sound control element
-            //let soundControl = document.getElementById('sound-control');
-
-            // Insert HTML into the sound-control element
-            //soundControl.innerHTML = `
-            //    <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-            //    <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
-            //    <p>Sound On/Off</p>
-            //`;
-
             //store interval ID
             let intervalId;
 
@@ -155,45 +135,8 @@ function triviaGameSuperman() {
                 themeAudio.play();
             }, 30000); // 30000 milliseconds = 30 seconds
 
-            // //get sounds-off and sound-on buttons
-             //let soundOffButton = document.querySelector('.sound-off');
-            //let soundOnButton = document.querySelector('.sound-on');
-
-             //play music event listener
-             themeAudio.addEventListener('play', function() {
-
-                 //hide sound on and show sound off
-                //soundOnButton.style.display = 'none';
-                 //soundOffButton.style.display = 'block';
-             });
-
-             //pause music event listener
-             //themeAudio.addEventListener('pause', function() {
-                 //hide sound off and show sound on
-                // soundOffButton.style.display = 'none';
-                // soundOnButton.style.display = 'block';
-             //});
-
              //play audio
             themeAudio.play();
-
-            //sound off event listener
-            //soundOffButton.addEventListener('click', function() {
-                //clear interval and mute audio
-                //themeAudio.muted = true;
-                //soundOnButton.style.display = 'block';
-                //soundOffButton.style.display = 'none';
-
-                //clearInterval(intervalId);
-            //});
-
-            //sound on event listener
-            //soundOnButton.addEventListener('click', function() {
-                //set interval and play audio
-                //themeAudio.play();
-                //soundOnButton.style.display = 'none';
-                //soundOffButton.style.display = 'block';
-            //});
 
         })
         // error handling
@@ -234,16 +177,6 @@ function triviaGameBatman() {
             //show first question
             displayNextQuestion();
 
-            //get sound control element
-            //let soundControl = document.getElementById('sound-control');
-
-            // Insert HTML into the sound-control element
-            //soundControl.innerHTML = `
-            //     <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-            //     <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
-            //     <p>Sound On/Off</p>
-            // `;
-
 
             //store interval ID
             let intervalId;
@@ -253,35 +186,10 @@ function triviaGameBatman() {
                 themeAudio.currentTime = 0;
                 themeAudio.play();
             }, 30000); // 30000 milliseconds = 30 seconds
-
-            //get sounds-off and sound-on buttons
-            //let soundOffButton = document.querySelector('.sound-off');
-            //let soundOnButton = document.querySelector('.sound-on');
-
-            //play music event listener
-            // themeAudio.addEventListener('play', function() {
-            //     //hide sound on and show sound off
-            //     soundOnButton.style.display = 'none';
-            //     soundOffButton.style.display = 'block';
-            // });
-
-            //pause music event listener
             
 
             //play audio
             themeAudio.play();
-
-            //sound off event listener
-            //soundOffButton.addEventListener('click', function() {
-            //    //clear interval and pause audio
-            //    themeAudio.pause();
-            //});
-
-            //sound on event listener
-            //soundOnButton.addEventListener('click', function() {
-                //set interval and play audio
-            //    themeAudio.play();
-            //});
 
         })
         //error handling
@@ -322,16 +230,6 @@ function triviaGameWonderwoman() {
             //show first question
             displayNextQuestion();
 
-            //get sound control element
-            //let soundControl = document.getElementById('sound-control');
-
-            // Insert HTML into the sound-control element
-            //soundControl.innerHTML = `
-            //    <i class="fa-solid fa-volume-high icon-white sound-on"></i>
-            //    <i class="fa-solid fa-volume-xmark icon-white sound-off"></i><br>
-            //    <p>Sound On/Off</p>
-            //`;
-
             //store interval ID
             let intervalId;
 
@@ -340,24 +238,6 @@ function triviaGameWonderwoman() {
                 themeAudio.currentTime = 0;
                 themeAudio.play();
             }, 30000); // 30000 milliseconds = 30 seconds
-
-            //get sounds-off and sound-on buttons
-            //let soundOffButton = document.querySelector('.sound-off');
-            //let soundOnButton = document.querySelector('.sound-on');
-
-            //play music event listener
-            //themeAudio.addEventListener('play', function() {
-                //hide sound on and show sound off
-            //    soundOnButton.style.display = 'none';
-            //    soundOffButton.style.display = 'block';
-            //});
-
-            //pause music event listener
-            //themeAudio.addEventListener('pause', function() {
-                //hide sound off and show sound on
-            //    soundOffButton.style.display = 'none';
-            //    soundOnButton.style.display = 'block';
-            //});
 
             //play audio
             themeAudio.play();
@@ -368,12 +248,6 @@ function triviaGameWonderwoman() {
                 themeAudio.pause();
 
             });
-
-            //sound on event listener
-            //soundOnButton.addEventListener('click', function() {
-                //set interval and play audio
-            //    themeAudio.play();
-            //});
 
         })
             // error handling
