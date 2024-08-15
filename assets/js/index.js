@@ -103,6 +103,9 @@ function triviaGameSuperman() {
     startGameBatman.disabled = true;
     startGameWonderwoman.disabled = true;
 
+    //start timer
+    //startTimer('triviaGameSuperman');
+
 
     setTimeout(function() {
         //fetch game data
@@ -154,6 +157,9 @@ function triviaGameBatman() {
     startGameSuperman.disabled = true;
     startGameBatman.disabled = true;
     startGameWonderwoman.disabled = true;
+
+    //start timer
+    //startTimer('triviaGameBatman');
 
     setTimeout(function() {
         //get game data
@@ -207,6 +213,9 @@ function triviaGameWonderwoman() {
     startGameSuperman.disabled = true;
     startGameBatman.disabled = true;
     startGameWonderwoman.disabled = true;
+
+    //start timer
+    //startTimer('triviaGameWonderwoman');
 
     setTimeout(function() {
         //get game data
@@ -418,6 +427,7 @@ nextQuestionModalButton.addEventListener('click', function() {
 //start timer function
 function startTimer() {
     let timeLeft = TIMER_DURATION;
+    //const timerElement = document.getElementById('timer');
     document.getElementById('timer').classList.add('countdown');
     document.getElementById('timer').textContent = timeLeft;
 
