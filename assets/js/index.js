@@ -334,12 +334,12 @@ function displayNextQuestion() {
         let returnHome = document.getElementById('return-home');
         returnHome.addEventListener('click', function() {
             audio5.play();
-            setTimeout(redirectToHome, 2000);
+            setTimeout(redirectToHome, 4000);
         });
                       
         returnHome.addEventListener('touchend', function() {
             audio5.play();
-            setTimeout(redirectToHome, 2000);
+            setTimeout(redirectToHome, 4000);
         });
             
         return;
