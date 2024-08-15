@@ -66,7 +66,7 @@ if (muteButton) {
 
     startGameSuperman.addEventListener('click', function() {
 
-        document.body.style.backgroundImage = "url('/assets/images/superman_background.jpg')";
+        document.body.style.backgroundImage = "url('./assets/images/superman_background.jpg')";
 
     });
 
@@ -78,7 +78,7 @@ if (muteButton) {
     //background change
     startGameBatman.addEventListener('click', function() {
 
-        document.body.style.backgroundImage = "url('/assets/images/batman_background.jpg')";
+        document.body.style.backgroundImage = "url('./assets/images/batman_background.jpg')";
     });
 
     // Wonderwoman mode - game trigger
@@ -89,7 +89,7 @@ if (muteButton) {
     //background change
     startGameWonderwoman.addEventListener('click', function() {
 
-        document.body.style.backgroundImage = "url('/assets/images/wonderwoman_background.jpg')";
+        document.body.style.backgroundImage = "url('./assets/images/wonderwoman_background.jpg')";
     });
 
 // Start Superman game
