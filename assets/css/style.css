@@ -78,6 +78,17 @@ h2 {
     display: block;
 }
 
+h3 {
+    text-align: center;
+    display: block;
+    background: #00000090;
+    color: #ffd700 !important;
+    font-size: 0.60em !important;
+    border-radius: 5px;
+    padding: 3px 3px 7px 3px;
+    margin: auto;   
+}
+
 main {
     flex-grow: 1;
     overflow: hidden;
