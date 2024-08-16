@@ -25,6 +25,8 @@ audio8.muted = true;
 
 let muted = true;
 
+let muteButton = document.getElementById('muteButton');
+
 function toggleMute() {
    //     if muted
     muted = !muted;
@@ -37,9 +39,17 @@ function toggleMute() {
     audio6.muted = muted;
     audio7.muted = muted;
     audio8.muted = muted;
+    console.log(muteButton)
+    if (muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound Off') {
+        muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound On'
+        muteButton = document.getElementById('muteButton');
+    } else { 
+        muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound Off'
+        muteButton = document.getElementById('muteButton');
+    }
 }
 
-let muteButton = document.getElementById('muteButton');
+//let muteButton = document.getElementById('muteButton');
 if (muteButton) {
     muteButton.addEventListener('click', toggleMute)
 }
