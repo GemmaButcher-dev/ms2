@@ -5,15 +5,15 @@
   1. [Overall Peformance](#overall-performance)
   2. [Code Validation](#code-validation)
   3. [Accessibility Testing](#accessibility-testing)
-  4. [JavaScript Testing](#javascript-testing)
+  4. [Responsiveness & Compatability Testing](#responsiveness--compatability-testing)
+  5. [JavaScript Testing](#javascript-testing)
         * JS Hint
-        
-  5. [Bug Fixes](#bug-fixes)
-  6. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
+  6. [Bug Fixes](#bug-fixes)
+  7. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
         * Project Goals
         * Players Goals
         * Super Squad helps players meet these goals by:
-  7. [Further Testing](#further-testing)
+  8. [Further Testing](#further-testing)
 
   ------
 
@@ -25,6 +25,11 @@ The complete site was tested on the lighthouse facility in Google Developer Tool
 |---------------------|-------------------------------------------------|--------------------------------------------------------------|
 |Start/Home Screen    |![screenshot](docs/testing/lighthouse_start.png) | Minor improvements for performance                           |
 |404                  |![screenshot](docs/testing/lighthouse_404.png)   | No warnings. Possible minor improvements. 100% accessibility |
+
+
+## Responsiveness & Compatability Testing
+
+
 
 ## Code Validation
 
