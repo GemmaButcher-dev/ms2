@@ -42,15 +42,7 @@ function toggleMute() {
     console.log(muteButton)
     console.log(muteButton.innerHTML);
     console.log(muted);
-    // if (muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound Off') {
-    //     console.log('if branch')
-    //     muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound On'
-    //     muteButton = document.getElementById('muteButton');
-    // } else { 
-    //     console.log('else branch')
-    //     muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound Off'
-    //     muteButton = document.getElementById('muteButton');
-    // }
+
     if (muted) {
         console.log('if branch')
         muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i><br>Sound On'
