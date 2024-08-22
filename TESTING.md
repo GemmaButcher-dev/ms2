@@ -30,7 +30,7 @@ The complete site was tested on the lighthouse facility in Google Developer Tool
 ## Responsiveness & Compatability Testing
 
  The below matrix shows the responsiveness and browser compatability testing carried out.
-[Testing Matrix](docs/testing/testing_matrix.png)
+![Screenshot](docs/testing/testing_matrix.png)
 
 
 ## Code Validation
