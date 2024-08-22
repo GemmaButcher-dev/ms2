@@ -189,6 +189,11 @@ Player and guardian goals are:
 
 ### Features Left To Implement
 
+   * Scoreboard of top 10 highest scores with player username stored.
+   * Additional superhero specific themes.
+   * About the gaming company page.
+   * Contact Form.
+
 ## Technologies Used
 
 ### Languages Used
