@@ -9,12 +9,14 @@
   5. [JavaScript Testing](#javascript-testing)
         * JS Hint
   6. [Bug Fixes](#bug-fixes)
-        * Sound Button Bug Fix
+        * Sound Button
+        * Game Over Audio
   7. [Testing User Stories from User Experience (UX) Section](#testing-user-stories)
         * Project Goals
         * Players Goals
         * Super Squad helps players meet these goals by:
-  8. [Further Testing](#further-testing)
+  8.  [Other Testing Methods](#other-testing)
+  9. [Further Testing](#further-testing)
 
   ------
 
@@ -66,14 +68,26 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Bug Fixes
 
-### Sound Button Bug Fix
+### Sound Button
+
 After the initial build there was a bug/issue with the sound button. it would only mute the theme sound. After discussing with my mentor it was decided to declare all of the sounds at the start of the JS file and create a button that would turn the sound on and off for all sounds from the start. The functions were also changed so the sounds were muted as default to meet accessibility criteria and best practices. The original sound code can be seen [here](docs/testing/js_soundcode_old.png). 
 
 Within the new function declared at the start the innnerhtml was targeted. This was an improvement but was sometimes unreliable on testing due to being stored in the dom. This version of the code can be seen [here](docs/testing/js_sound_innerhtml.png).
 
 The sound button function was then amended again so that the muted variable was targeted directly. This solved all the issues with the sound button making it reliable and self comtained within the code without relying on the dom. The final version can be seen [here](docs/testing/js_sound_bugfix.png).
 
+### Game Over Audio Bug Fix
+
+The game over audio was being cut off half way through the audio. The length of the time the audio played was adjusted until it worked as expected.
+
+
 ## Testing User Stories from User Experience (UX) Section
+
+## Other Testing Methods
+
+### Manual Testing
+
+### Automated Testing
 
 ## Further Testing
 
