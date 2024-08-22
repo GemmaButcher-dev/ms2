@@ -125,6 +125,12 @@ Player and guardian goals are:
 
 #### Imagery
 
+A range of imagery is used from free background images at [freepik](https://www.freepik.com/) to using [leonardo AI](https://app.leonardo.ai/image-generation) to create superhero and villain images to create something unique and effective, bespoke to this project.
+
+The below image was created using Leonardo AI.
+
+![screenshot](assets/images/superman_1.jpg)
+
 ### Wireframes
 
 Wireframes were created using balsamiq and can be found in the [wireframes folder](docs/wireframes).
