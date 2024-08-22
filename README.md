@@ -127,6 +127,15 @@ Player and guardian goals are:
 
 ### Wireframes
 
+Wireframes were created using balsamiq and can be found in the [wireframes folder](docs/wireframes).
+Below is the mobile view wireframe of the homepage.
+
+![screenshot](docs/wireframes/start_screen.png)
+------
+The wireframe shwoing the modal pop up is shown below.
+
+![screenshot](docs/wireframes/modal_wrong_answer_screen.png)
+
 ## Features
 
 ### Existing Features
