@@ -76,6 +76,8 @@ Within the new function declared at the start the innnerhtml was targeted. This 
 
 The sound button function was then amended again so that the muted variable was targeted directly. This solved all the issues with the sound button making it reliable and self comtained within the code without relying on the dom. The final version can be seen [here](docs/testing/js_sound_bugfix.png).
 
+By carrying out the bug fix the code has been refined and made more readable and logical. It has minimised the code and removed 66 redundant lines.
+
 ### Game Over Audio Bug Fix
 
 The game over audio was being cut off half way through the audio. The length of the time the audio played was adjusted until it worked as expected.
@@ -85,14 +87,32 @@ The game over audio was being cut off half way through the audio. The length of 
 
 ## Other Testing Methods
 
+It is best to combine manual and automated testing. Automated tests will not test user experience and tests will only ever be as good as the questions we ask it to perform.
+
 ### Manual Testing
+
+Behaviour driven Development (BDD) is where a project or product is tested  to the user stories. This has also been done in responsiveness and compatability testing section above. 
+This form of testing although useful in terms of user story testing can be subject to bias and sometimes things can get missed due to fatigue and is costly in time and resources. BDD is more user-centric and revolves around system behaviour. This is an Agile software development methodology.
+It is particuarly useful as it can encompass a wide range of input from stakeholders to managers and is good for planning a project and monitoring throughout its entirety. Goals can be set along the projects way to delivery and measured.
+
+#### User Testing 
+
+User Testing (a form of BDD) has been carried out on the project. All of the details are shown in the table below.
+ 
 
 ### Automated Testing
 
+Test Driven Development (TDD) is where developers test first and use these results to guide theor development. The process begins when tests are written in order to fail but only so much so that the tests dont break the programme. TDD is thought of as more developer-centric, and is revolves around code correctness.
+
+A popular technique in TDD is Red-Green-Refactor. A manageable way of testing code. This is explained below;
+Red - Write a failing test. Script a test that will fail around a specific function of the programme.
+Green - Make the test pass, enough needs to be done to get it to pass and work
+Refactor - Clean up the code. Refining the code is done making it efficient and reliable. 
+
+Various language specific frameworks are available to run automated testing. One of the most popular is Jest for testing JavaScript. 
+
 ## Further Testing
 
-    * The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-    * The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
     * A large amount of testing was done to ensure that all pages were linking correctly.
     * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
       experience issues.
