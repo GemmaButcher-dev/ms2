@@ -23,6 +23,7 @@ Welcome to
    * Results Feature
    * Restart Quiz Button
    * Sound Button
+   * Footer
    * 404 Page
    * Error Handling
    * Features left to implement
@@ -181,6 +182,12 @@ The wireframe shwoing the modal pop up is shown below.
    * A sound button, set to muted/off by default, is clearly labelled in the bottom left of the game area.
 
    ![screenshot](docs/design/sound_btn.png)
+
+   #### Footer
+
+   * There is a fixed footer at the bottom of the page. 
+   * The footer contains the game developer name and copyright with an automatically updated year. This has been done using JavaScript and updates when the page is loaded to the current year. The function updates the span element in the footer.
+
 
    #### 404 Page
 
