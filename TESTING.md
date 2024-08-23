@@ -152,6 +152,25 @@ Behaviour driven Development (BDD) is where a project or product is tested to th
 This form of testing although useful in terms of user story testing can be subject to bias and sometimes things can get missed due to fatigue and is costly in time and resources. BDD is more user-centric and revolves around system behaviour. This is an Agile software development methodology.
 It is particuarly useful as it can encompass a wide range of input from stakeholders to managers and is good for planning a project and monitoring throughout its entirety. Goals can be set along the projects way to delivery and measured.
 
+- Below is a table of the manual user testing carried out.
+
+| **Feature**          | **Test Details**           | **Expected results**                      | **Pass/Fail** |                                             
+| :-- | :-- | :-- | :-- |
+| Header logo            | Click to redirect to start page | Links to start page, except when modal displayed |  Pass  |
+| Superman button        | Audio on, click button    | Starts game, plays audio when on, background changes |  Pass  |
+| Batman button          | Audio on, click button    | Starts game, plays audio when on, background changes |  Pass  |
+| Wonderwoman button     | Audio on, click button    | Starts game, plays audio when on, background changes |  Pass  |
+| Sound button           | Mute and unmute randomly  | Unmutes and mutes on click throughout    |  Pass  |
+| Modal answer selection | Select answers by click   | All answers selectable                   |  Pass  |
+| Modal correct answer   | Correct question selected | Correct answer modal message             |  Pass  |   
+| Modal incorrect answer | Incorrect answer selected | incorrect answer, display correct answer in modal |  Pass  |
+| Next question button   | Click next question button in modal | Displays next question if less than 5 have been answered |  Pass  |
+| See Score Button       | Click button at end of game in modal | Shows results and image when clicked. Plays sound clip |  Pass  |
+| Restart quiz button     | Click button on results screen | Links to start game screen |  Pass | 
+| Sound Button unmute    | Click button to unmute | Label changes to mute, audio plays |  Pass |
+| Sound Button mute    | Click button to mute | Label changes to unmute, audio mutes|  Pass |
+| Results Audio | Sound On, click see results button | Sound clip played when results shown | Pass |
+| Auto date change in footer | Check year is present and correct on loading | Shows current year in span in footer | Pass |
 
 ### Automated Testing
 
