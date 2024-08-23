@@ -1,6 +1,5 @@
-//document.addEventListener('DOMContentLoaded', (event) => {
-   //document.addEventListener('DOMContentLoaded', updateDate);
-    // Game Logic
+/* jshint esversion: 6 */
+// Game Logic
 
     //game audio
 let themeAudio = new Audio('./assets/audio/hero_theme.mp3');
