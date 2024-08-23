@@ -150,14 +150,10 @@ It is best to combine manual and automated testing. Automated tests will not tes
 
 ### Manual Testing
 
-Behaviour driven Development (BDD) is where a project or product is tested  to the user stories. This has also been done in responsiveness and compatability testing section above. 
+Behaviour driven Development (BDD) is where a project or product is tested to the user stories and by the user. This has also been done in responsiveness and compatability testing section above. 
 This form of testing although useful in terms of user story testing can be subject to bias and sometimes things can get missed due to fatigue and is costly in time and resources. BDD is more user-centric and revolves around system behaviour. This is an Agile software development methodology.
 It is particuarly useful as it can encompass a wide range of input from stakeholders to managers and is good for planning a project and monitoring throughout its entirety. Goals can be set along the projects way to delivery and measured.
 
-
-
-
- 
 
 ### Automated Testing
 
@@ -172,6 +168,6 @@ Various language specific frameworks are available to run automated testing. One
 
 ## Further Testing
 
-    * A large amount of testing was done to ensure that all pages were linking correctly.
+    * A large amount of testing was done to ensure that all pages, buttons, feedback and functions were working correctly.
     * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
       experience issues.
