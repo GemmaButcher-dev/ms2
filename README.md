@@ -169,7 +169,7 @@ The wireframe shwoing the modal pop up is shown below.
 
    #### Restart Quiz Button
 
-   * A restart button is located underneath the results image that takes the user back to the game selection options.
+   * A restart button is located underneath the results image that takes the user back to the game/theme selection options.
 
    ![screenshot](docs/design/restart_quiz_button.png)
 
@@ -196,9 +196,12 @@ The wireframe shwoing the modal pop up is shown below.
 
 ### Languages Used
 
- * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
- * [HTML5](https://en.wikipedia.org/wiki/HTML5)
- * JavaScript
+- ![HTML5](https://img.shields.io/static/v1?label=HTML&message=5&color=E34F26&logo=html5&logoColor=ffffff)
+    - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
+- ![CSS3](https://img.shields.io/static/v1?label=CSS&message=3&color=1572B6&logo=css3&logoColor=ffffff)
+    - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
+- ![JavaScript](https://img.shields.io/static/v1?label=JavaScript&message=ES6&color=F7DF1E&logo=javascript&logoColor=ffffff)
+    - [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used as the base for game interaction.
 
 ### Frameworks, Programs and Libraries Used
 
