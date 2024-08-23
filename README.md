@@ -128,23 +128,25 @@ The wireframe shwoing the modal pop up is shown below.
 
    #### Game Area
 
-   * The home page largely consists of a game area which presents 3 choices of game topic to the user. The choices are Superman, Batman or Wonderwoman. There are hero appropriate sound effects when a theme button is clicked.
+   * The home page largely consists of a game area which presents 3 choices of superhero game topic to the user. The choices are Superman, Batman or Wonderwoman. There are hero appropriate sound effects when a theme button is clicked.
+
+    ![screenshot](docs/design/game_selection.png)
 
    #### Multi-Choice Questions
 
-   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a timer. 
+   * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a countdown timer. A superhero theme audio is played throught the game in a loop.
 
    ![screenshot](docs/design/questions.png)
 
    #### Timer
 
-   * The timer shows the user how much time they have to answer the questions and counts down from 10 to 0. The timer resets for each question.
+   * The countdown timer shows the user how much time they have to answer the questions and counts down from 10 to 0. The timer resets for each question.
 
    ![screenshot](docs/design/timer.png)
 
    #### Modal
 
-   * A modal appears when the user selects an answer and will let the user know if they were correct or not and what the correct answer was. If the user does not select a question within the given 10 second time limit the modal will inform the user that they are out of time. The background image changes depending on whether the user uis correct, incorrect or out of time. This is shown below.
+   * A modal appears when the user selects an answer and will let the user know if they were correct or not and what the correct answer was. If the user does not select a question within the given 10 second time limit the modal will inform the user that they are out of time. The background image changes depending on whether the user is correct, incorrect or out of time. This is shown below.
 
 | Modal            | Example Image                                        |
 |------------------|------------------------------------------------------|
@@ -156,7 +158,7 @@ The wireframe shwoing the modal pop up is shown below.
 
    #### Results Feature
 
-   * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions they answered. The results page has an image and sound clip dependending on their score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
+   * On completion of the quiz the user is presented with a results page stating their score out of the 5 questions that they answered. The results page has an image and sound clip dependending on their score. If they get 5/5 correct they will be shown an image of superman and superman soundclip with their score above. If the score 3/5 or 4/5 they will get an image and sound clip of the joker with their score above. if the user scores less than 3/5 they will be shown an image of lex luther and a sound clip with score above. 
 
 | Score      | Example Image                                    | Sounds                                                   |
 |------------|--------------------------------------------------|----------------------------------------------------------|
@@ -172,9 +174,9 @@ The wireframe shwoing the modal pop up is shown below.
 
    #### Sound Button
 
-   * There is a sound button with a label set to muted by default.
+   * A sound button, set to muted/off by default, is clearly labelled in the bottom left of the game area.
 
-   ![screenshot](docs/design/timer.png)
+   ![screenshot](docs/design/sound_btn.png)
 
    #### 404 Page
 
