@@ -131,13 +131,13 @@ The wireframe shwoing the modal pop up is shown below.
 
    * The home page largely consists of a game area which presents 3 choices of superhero game topic to the user. The choices are Superman, Batman or Wonderwoman. There are hero appropriate sound effects when a theme button is clicked.
 
-    ![screenshot](docs/design/game_selection.png)
+![screenshot](docs/design/game_selection.png)
 
    #### Multi-Choice Questions
 
    * After selecting a specific superhero topic the user is then presented with their first multi-choice question. The user is given 10 seconds to select an answer shown in a countdown timer. A superhero theme audio is played throught the game in a loop.
 
-   ![screenshot](docs/design/questions.png)
+![screenshot](docs/design/questions.png)
 
    #### Timer
 
