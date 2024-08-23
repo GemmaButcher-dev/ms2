@@ -5,7 +5,7 @@ Welcome to
 
 [View the live project here!] (https://gemmabutcher-dev.github.io/ms2/)
 
-## Table of Contents
+## Table of Contents (#table-of-contents)
 1. [UX](#ux)
 
   * Project Goals
@@ -31,13 +31,15 @@ Welcome to
   * Languages Used
   * Frameworks, Programs and Libraries Used
 
-4. [Deployment](#deployment)
+4. [Testing](#testing)
+
+5. [Deployment](#deployment)
 
   * GitHub Pages
   * Forking the GitHub Repository
   * Making a Local Clone
 
-5. [Credits](#credits)
+6. [Credits](#credits)
 
   * Content
   * Media
@@ -226,6 +228,13 @@ The wireframe shwoing the modal pop up is shown below.
 10. [Canva](https://www.canva.com/colors/color-palette-generator/):
     Canva's logo generator was used to create a logo for the favicons.
 
+## Testing
+
+All detailed testing information can be seen in the [TESTING.md](TESTING.md) file.
+Thorough manual testing has been carried out.
+
+ The below matrix shows the responsiveness and browser compatability testing carried out.
+![Screenshot](docs/testing/testing_matrix.png)
 
 ## Deployment
 
@@ -305,3 +314,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
   * My Mentor for continuous helpful feedback.
   * Cohort Leader Rachel Furlong for her continued support.
   * Tutor support at Code Institute for their support.
+  * ChatGPT for problem solving out of hours.
