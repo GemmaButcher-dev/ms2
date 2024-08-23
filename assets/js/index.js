@@ -1,4 +1,5 @@
 //document.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener('DOMContentLoaded', updateDate);
     // Game Logic
 
     //game audio
@@ -467,3 +468,21 @@ function stopTimer() {
     clearInterval(timer);
     document.getElementById('timer').classList.remove('countdown');
 }
+
+// update date year when loaded function
+
+function updateDate() {
+    // Get the current date
+    const today = new Date();
+
+    // Format the date (e.g., Month Day, Year)
+    const formattedDate = today.toLocaleDateString('en-US', {
+        year: 'numeric',
+    });
+
+    // Find the element by its ID and update its content
+    document.getElementById('current-date').textContent = formattedDate;
+}
+
+// Call the function to update the date on page load
+updateDate();
