@@ -171,15 +171,23 @@ It is particuarly useful as it can encompass a wide range of input from stakehol
 | Sound Button mute    | Click button to mute | Label changes to unmute, audio mutes|  Pass |
 | Results Audio | Sound On, click see results button | Sound clip played when results shown | Pass |
 | Auto date change in footer | Check year is present and correct on loading | Shows current year in span in footer | Pass |
+| 404 Page | Type unknown url extention in browser | Page loads when a page cannot be found or error occurs | Pass |
+| 404 Return home button | Click return home button | Redirects to home and links to index.html page on click | Pass |
 
 ### Automated Testing
 
 Test Driven Development (TDD) is where developers test first and use these results to guide theor development. The process begins when tests are written in order to fail but only so much so that the tests dont break the programme. TDD is thought of as more developer-centric, and is revolves around code correctness.
 
-A popular technique in TDD is Red-Green-Refactor. A manageable way of testing code. This is explained below;
+A popular technique in TDD is Red-Green-Refactor. TDD is a manageable way of testing code breaking it down into manageable chunks. This is explained below;
 Red - Write a failing test. Script a test that will fail around a specific function of the programme.
 Green - Make the test pass, enough needs to be done to get it to pass and work
 Refactor - Clean up the code. Refining the code is done making it efficient and reliable. 
+
+An example of automated testing for this project would be;
+
+-Red - test is written for Background image does not change on start game button being clicked.
+-Green - Add background image function with event listeners to the start game button so background changes on click. 
+-Refactor - Tidy code up and minimise. Check reliability. Revisit when more functions or event listeners are added, or the original function is extended. Monitor.
 
 Various language specific frameworks are available to run automated testing. One of the most popular is Jest for testing JavaScript. 
 
@@ -189,4 +197,4 @@ It is best to combine manual and automated testing. Automated tests will not tes
 
     * A large amount of testing was carried out to ensure that all pages, buttons, feedback and functions were working correctly.
     * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
-      experience issues.
+      experience issues. Many liked the cinematic feel and different superhero themes. 
