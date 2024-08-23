@@ -1,5 +1,5 @@
 //document.addEventListener('DOMContentLoaded', (event) => {
-    document.addEventListener('DOMContentLoaded', updateDate);
+   //document.addEventListener('DOMContentLoaded', updateDate);
     // Game Logic
 
     //game audio
@@ -475,7 +475,7 @@ function updateDate() {
     // Get the current date
     const today = new Date();
 
-    // Format the date (e.g., Month Day, Year)
+    // Format the date (e.g., Year)
     const formattedDate = today.toLocaleDateString('en-US', {
         year: 'numeric',
     });
@@ -485,4 +485,4 @@ function updateDate() {
 }
 
 // Call the function to update the date on page load
-updateDate();
+document.addEventListener('DOMContentLoaded', updateDate);
