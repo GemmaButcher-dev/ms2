@@ -118,7 +118,7 @@ The below image was created using Leonardo AI.
 
 ### Wireframes
 
-Wireframes were created using balsamiq and can be found in the [wireframes folder](docs/wireframes).
+Wireframes were created using [Balsamiq](https://balsamiq.com/) and can be found in the [wireframes folder](docs/wireframes).
 Below is the mobile view wireframe of the homepage.
 
 ![screenshot](docs/wireframes/start_screen.png)
