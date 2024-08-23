@@ -300,7 +300,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
   * [ahref](https://ahrefs.com/writing-tools/img-alt-text-generator) : For image alt text.
   * Favicon sitemanifest and header tags was provided by [Favicon Generator](https://favicon.io/)
   * ChatGPT for problem solving out of hours and providing help with function formatting.
-  * [Free Code Camp](https://forum.freecodecamp.org/t/how-to-create-javascript-quiz-with-json-file/403075) for the game data json setup.
+  * [Free Code Camp](https://forum.freecodecamp.org/t/how-to-create-javascript-quiz-with-json-file/403075) for the game data 
+    json setup.
+  * [hamzadev](https://forum.freecodecamp.org/t/how-to-create-javascript-quiz-with-json-file/403075) for game logic starting 
+    point and json 'fetch'.
+   
 
 ### Content
 
