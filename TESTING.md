@@ -85,6 +85,65 @@ The game over audio was being cut off half way through the audio. The length of 
 
 ## Testing User Stories from User Experience (UX) Section
 
+The project user stories have been met with the following features;
+
+
+✅  test my knowledge of superheroes.
+🦸  Super Squad provides:
+      * Multiple choice questions to test knowledge.
+      * 3 different superhero themes providing variety of knowledge testing.
+      * A restart button to restart the quiz and retest knowledge to improve score.
+
+✅  be able to start a new quiz game.
+🦸  Super Squad provides:
+      * Game start buttons on the homepage.
+      * By clicking the a superhero theme button a new game is started and a question is presented to the player in a modal.
+
+✅  answer multiple choice questions by selecting the correct answer.
+🦸  Super Squad provides:
+     * Multiple choice of answers to select for each question in a modal.
+     * The player can select their answer choice in the modal.
+
+✅  get immediate feedback to know if I have selected the correct answer or selected a     
+    incorrect answer.
+🦸  Super Squad provides:
+     * Displays to the users if their answer was correct or incorrect in the modal wiht appropriate image.
+
+✅  go to the next question after recieving feedback from the current one so I can continue to play the 
+    quiz and increase my knowledge base.
+🦸  Super Squad provides:
+     * A next question button allowing the player to continue with the quiz after recieving feedback.
+
+✅  know if i have a time restriction and what time i have left to answer a question or complete the quiz.
+🦸  Super Squad provides:
+      * A countdown timer at the bottom of the screen above the footer idicating time left to answer a question. This resets for the next question.
+      * A time up message in the modal to indicate the player/user is out of time.
+
+✅  see my final score at the end of the quiz to know how good my knowledge is.
+🦸  Super Squad provides:
+     * A score displayed after answering all questions. 
+     * The score is a total of correct answers scored throughout the quiz game.
+
+✅  be able to restart the quiz to attempt the quiz again and improve my score.
+🦸  Super Squad provides:
+     * A restart button in the game area on the homepage.
+     * On selecting the restart button a new quiz game is started from the first question.
+
+✅  find the quiz to be engaging and fun with relevant images and sound.
+🦸  Super Squad provides:
+     * Images relevant to a superhero theme.
+     * Sound effects and theme audio throughout the game relevant to the superhero chosen.
+
+✅  find the experience immersive and cinematic.
+🦸  Super Squad provides:
+      * Cinematic and dramatic sound effects and images according to theme selection and player/user score.
+      * Background changes according to chosen theme, with multiple audio effects throughout.
+
+✅  be able to turn on and off all sounds throughout the game by locating a sound button.
+🦸  Super Squad provides:
+      * A sound button clearly labelled and set as muted by default to meet accessibility.
+      * A sound button which label changes depending on the state of sound audio.
+
 ## Other Testing Methods
 
 It is best to combine manual and automated testing. Automated tests will not test user experience and tests will only ever be as good as the questions we ask it to perform.
@@ -95,9 +154,9 @@ Behaviour driven Development (BDD) is where a project or product is tested  to t
 This form of testing although useful in terms of user story testing can be subject to bias and sometimes things can get missed due to fatigue and is costly in time and resources. BDD is more user-centric and revolves around system behaviour. This is an Agile software development methodology.
 It is particuarly useful as it can encompass a wide range of input from stakeholders to managers and is good for planning a project and monitoring throughout its entirety. Goals can be set along the projects way to delivery and measured.
 
-#### User Testing 
 
-User Testing (a form of BDD) has been carried out on the project. All of the details are shown in the table below.
+
+
  
 
 ### Automated Testing
