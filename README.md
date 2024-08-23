@@ -316,7 +316,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Content
 
   * All content was designed by the developer. 
-  * Trivia questions were sourced from [ChatGPT](https://openai.com/index/chatgpt/)
+  * Trivia questions were sourced from [ChatGPT](https://openai.com/index/chatgpt/).
+  * [Code institute](https://learn.codeinstitute.net) Learning material.
 
 ### Media
 
