@@ -9,8 +9,7 @@ Welcome to
 1. [UX](#ux)
 
   * Project Goals
-  * Player Goals 
-  * User Stories  
+  * User Goals 
   * Design Choices
   * Wireframes
 
@@ -53,58 +52,39 @@ Welcome to
 
 #### Project Goals
 
-The target audience is for all users aged 7 and above or younger children with a Knowledge and interest in learning about superheros.
+The target audience is for all users aged 7 and above or younger children with a Knowledge and interest in learning about superheros by playing a immersive trivia game with audio and visual feedback.
 
-#### Player Goals
+#### User Goals
 
-Player and guardian goals are:
+"**_As a user, I would like to_** _______________"
 
- 1. As a player I want to test my knowledge of superheroes.
+✅  test my knowledge of superheroes.
 
-   Super Squad provides:
-    * Multiple choice questions to test knowledge.
+✅  be able to start a new quiz game.
 
- 2. As a player I want to be able to start a new quiz game.
+✅  answer multiple choice questions by selecting what i think is the correct answer.
 
-    Super Squad provides:
-     * A start button on the homepage.
-     * By clicking the start button a new game is started and a question is presented to the player.
-
- 3. As a player I want to answer multiple choice questions by selecting the correct answer.
-
-    Super Squad provides:
-     * Multiple answers to each question.
-     * The player can select their answer choice.
-
- 4. As a player I want immediate feedback to know if I have selected the correct answer or selected a     
+✅  get immediate feedback to know if I have selected the correct answer or selected a     
     incorrect answer.
 
-    Super Squad provides:
-     * Displays to the users if their answer was correct or incorrect.
+✅  go to the next question after recieving feedback from the current one so I can continue to play the 
+    quiz and increase my knowledge base.
 
- 5. As a player I want to go to the next question after recieving feedback from the current one so I can continue to play the quiz and increase my knowledge base.
+✅  know if i have a time restriction and what time i have left to answer a question or complete the quiz.
 
-    Super Squad provides:
-     * A next question button allowing the player to continue with the quiz after recieving feedback.
+✅  see my final score at the end of the quiz to know how good my knowledge is.
 
- 6. As a player i would like to see my final score at the end of the quiz to know how good my knowledge is.
+✅  be able to restart the quiz to attempt the quiz again and improve my score.
 
-    Super Squad provides:
-     * A score displayed after answering all questions. 
-     * The score is a total of correct answers scored throughout the quiz game.
+✅  find the quiz to be engaging and fun with relevant images and sound.
 
- 7. As a player I want to be able to restart the quiz to attempt the quiz again and improve my score.
+✅  find the experience immersive and cinematic.
 
-    Super Squad provides:
-     * A restart button in the game area on the homepage.
-     * On selecting the restart button a new quiz game is started from the first question.
+✅  be able to turn on and off all sounds throughout the game by locating a sound button.
 
- 8. As a player i want the quiz to be engaging and fun with relevant images and sound.
 
-    Super Squad provides:
-     * Images relevant to a superhero theme.
-     * Sound effects and theme audio throughout the game relevant to the superhero chosen.
-     * A sound on and off button.
+
+
 
 ### Design Choices
 
