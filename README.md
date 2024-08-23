@@ -97,6 +97,7 @@ The target audience is for all users aged 7 and above or younger children with a
  * red #ff0000
  * white #ffffff
  * black #000000
+ * yellow #ffd700
 
 #### Typography
 
@@ -142,7 +143,7 @@ The wireframe shwoing the modal pop up is shown below.
 
    * The countdown timer shows the user how much time they have to answer the questions and counts down from 10 to 0. The timer resets for each question.
 
-   ![screenshot](docs/design/timer.png)
+   ![screenshot](docs/design/timer_countdown.png)
 
    #### Modal
 
