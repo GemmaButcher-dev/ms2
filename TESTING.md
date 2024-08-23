@@ -146,8 +146,6 @@ The project user stories have been met with the following features;
 
 ## Other Testing Methods
 
-It is best to combine manual and automated testing. Automated tests will not test user experience and tests will only ever be as good as the questions we ask it to perform.
-
 ### Manual Testing
 
 Behaviour driven Development (BDD) is where a project or product is tested to the user stories and by the user. This has also been done in responsiveness and compatability testing section above. 
@@ -166,8 +164,10 @@ Refactor - Clean up the code. Refining the code is done making it efficient and 
 
 Various language specific frameworks are available to run automated testing. One of the most popular is Jest for testing JavaScript. 
 
+It is best to combine manual and automated testing. Automated tests will not test user experience and tests will only ever be as good as the questions we ask it to perform.
+
 ## Further Testing
 
-    * A large amount of testing was done to ensure that all pages, buttons, feedback and functions were working correctly.
+    * A large amount of testing was carried out to ensure that all pages, buttons, feedback and functions were working correctly.
     * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
       experience issues.
