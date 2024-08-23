@@ -3,7 +3,7 @@ Welcome to
 # 🦸🏻‍♀️ Super Squad 🦸🏼‍♂️
 ![device mockup](docs/testing/amiresponsive.png)
 
-[View the live project here!] (https://gemmabutcher-dev.github.io/ms2/)
+View the live project [here!](https://gemmabutcher-dev.github.io/ms2/)
 
 ## Table of Contents (#table-of-contents)
 1. [UX](#ux)

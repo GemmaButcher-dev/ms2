@@ -49,9 +49,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Accesibility Testing
 
-    * The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here for index.html](docs/testing/webaim.png) and [viewed here for 404.html](docs/testing/webaim_404.png). There was a minor warning where the icon was being detected as a h2, although not being used or labelled as a h2.
+* The complete site was tested using [Web Aim](https://wave.webaim.org/) and has passed. This can be [viewed here for index.html](docs/testing/webaim.png) and [viewed here for 404.html](docs/testing/webaim_404.png). There was a minor warning where the icon was being detected as a h2, although not being used or labelled as a h2.
 
-    * The sound initially played by default however after researching accessibility and sounds, the sound button has been switched off as default unless the user explicitly turns on the the sound button. The sound button has also had a label added to it to make it clear where it is and what it does. This has been done to meet accessibility criteria and guidlines. This was not in the original wireframes design.
+ * The sound initially played by default however after researching accessibility and sounds, the sound button has been switched off as default unless the user explicitly turns on the the sound button. The sound button has also had a label added to it to make it clear where it is and what it does. This has been done to meet accessibility criteria and guidlines. This was not in the original wireframes design.
 
 ## JavaScript Testing
 
@@ -163,7 +163,7 @@ It is particuarly useful as it can encompass a wide range of input from stakehol
 | Sound button           | Mute and unmute randomly  | Unmutes and mutes on click throughout    |  Pass  |
 | Modal answer selection | Select answers by click   | All answers selectable                   |  Pass  |
 | Modal correct answer   | Correct question selected | Correct answer modal message             |  Pass  |   
-| Modal incorrect answer | Incorrect answer selected | incorrect answer, display correct answer in modal |  Pass  |
+| Modal incorrect answer | Incorrect answer selected | Incorrect answer, display correct answer in modal |  Pass  |
 | Next question button   | Click next question button in modal | Displays next question if less than 5 have been answered |  Pass  |
 | See Score Button       | Click button at end of game in modal | Shows results and image when clicked. Plays sound clip |  Pass  |
 | Restart quiz button     | Click button on results screen | Links to start game screen |  Pass | 
@@ -172,7 +172,7 @@ It is particuarly useful as it can encompass a wide range of input from stakehol
 | Results Audio | Sound On, click see results button | Sound clip played when results shown | Pass |
 | Auto date change in footer | Check year is present and correct on loading | Shows current year in span in footer | Pass |
 | 404 Page | Type unknown url extention in browser | Page loads when a page cannot be found or error occurs | Pass |
-| 404 Return home button | Click return home button | Redirects to home and links to index.html page on click | Pass |
+| 404 take me home button | Click take me home button | Redirects to home and links to index.html page on click | Pass |
 
 ### Automated Testing
 
@@ -185,9 +185,11 @@ Refactor - Clean up the code. Refining the code is done making it efficient and 
 
 An example of automated testing for this project would be;
 
--Red - test is written for Background image does not change on start game button being clicked.
+-Red - A test is written for Background image does not change on start game button being clicked.
+
 -Green - Add background image function with event listeners to the start game button so background changes on click. 
--Refactor - Tidy code up and minimise. Check reliability. Revisit when more functions or event listeners are added, or the original function is extended. Monitor.
+
+-Refactor - Tidy code up and minimise where possible. Check reliability. Revisit when more functions or event listeners are added, or the original function is extended. Monitor.
 
 Various language specific frameworks are available to run automated testing. One of the most popular is Jest for testing JavaScript. 
 
@@ -195,6 +197,6 @@ It is best to combine manual and automated testing. Automated tests will not tes
 
 ## Further Testing
 
-    * A large amount of testing was carried out to ensure that all pages, buttons, feedback and functions were working correctly.
-    * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
+ * A large amount of testing was carried out to ensure that all pages, buttons, feedback and functions were working correctly.
+ * Friends and family members were asked to review the site and documentation to point out any bugs and/or user 
       experience issues. Many liked the cinematic feel and different superhero themes. 
