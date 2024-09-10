@@ -89,60 +89,94 @@ The project user stories have been met with the following features;
 
 
 ✅  test my knowledge of superheroes.
-🦸  Super Squad provides:
-      * Multiple choice questions to test knowledge.
-      * 3 different superhero themes providing variety of knowledge testing.
+
+🦸  Super Squad provides:<br>
+      * Multiple choice questions to test knowledge. <br>
+      * 3 different superhero themes providing variety of knowledge testing.<br>
       * A restart button to restart the quiz and retest knowledge to improve score.
 
+      Multiple choice questions can be seen below.
+
+![screenshot](docs/design/questions.png)
+
+
 ✅  be able to start a new quiz game.
-🦸  Super Squad provides:
-      * Game start buttons on the homepage.
+
+🦸  Super Squad provides:<br>
+      * Game start buttons on the homepage.<br>
       * By clicking the a superhero theme button a new game is started and a question is presented to the player in a modal.
 
+      Game start and theme selection buttons can be seen below.
+
+![screenshot](docs/design/game_selection.png)
+
 ✅  answer multiple choice questions by selecting the correct answer.
-🦸  Super Squad provides:
-     * Multiple choice of answers to select for each question in a modal.
+
+🦸  Super Squad provides:<br>
+     * Multiple choice of answers to select for each question in a modal.<br>
      * The player can select their answer choice in the modal.
 
 ✅  get immediate feedback to know if I have selected the correct answer or selected a     
     incorrect answer.
-🦸  Super Squad provides:
-     * Displays to the users if their answer was correct or incorrect in the modal wiht appropriate image.
+
+🦸  Super Squad provides:<br>
+     * Displays to the users if their answer was correct or incorrect in the modal wiht appropriate image.<br>
+
+     The modal with answer correctness is shown below.
+
+![screenshot](docs/design/joker_answer_modal.png)
 
 ✅  go to the next question after recieving feedback from the current one so I can continue to play the 
     quiz and increase my knowledge base.
-🦸  Super Squad provides:
+
+🦸  Super Squad provides:<br>
      * A next question button allowing the player to continue with the quiz after recieving feedback.
 
 ✅  know if i have a time restriction and what time i have left to answer a question or complete the quiz.
-🦸  Super Squad provides:
-      * A countdown timer at the bottom of the screen above the footer idicating time left to answer a question. This resets for the next question.
+
+🦸  Super Squad provides:<br>
+      * A countdown timer at the bottom of the screen above the footer idicating time left to answer a question. This resets for the next question.<br>
       * A time up message in the modal to indicate the player/user is out of time.
 
 ✅  see my final score at the end of the quiz to know how good my knowledge is.
-🦸  Super Squad provides:
-     * A score displayed after answering all questions. 
+
+🦸  Super Squad provides:<br>
+     * A score displayed after answering all questions. <br>
      * The score is a total of correct answers scored throughout the quiz game.
 
 ✅  be able to restart the quiz to attempt the quiz again and improve my score.
-🦸  Super Squad provides:
-     * A restart button in the game area on the homepage.
+
+🦸  Super Squad provides:<br>
+     * A restart button in the game area on the homepage.<br>
      * On selecting the restart button a new quiz game is started from the first question.
 
+     The restart quiz button is shown below.
+
+![screenshot](docs/design/restart_quiz_button.png)
+
 ✅  find the quiz to be engaging and fun with relevant images and sound.
-🦸  Super Squad provides:
-     * Images relevant to a superhero theme.
+
+🦸  Super Squad provides:<br>
+     * Images relevant to a superhero theme.<br>
      * Sound effects and theme audio throughout the game relevant to the superhero chosen.
 
 ✅  find the experience immersive and cinematic.
-🦸  Super Squad provides:
-      * Cinematic and dramatic sound effects and images according to theme selection and player/user score.
+
+🦸  Super Squad provides:<br>
+      * Cinematic and dramatic sound effects and images according to theme selection and player/user score.<br>
       * Background changes according to chosen theme, with multiple audio effects throughout.
 
 ✅  be able to turn on and off all sounds throughout the game by locating a sound button.
-🦸  Super Squad provides:
-      * A sound button clearly labelled and set as muted by default to meet accessibility.
+
+🦸  Super Squad provides:<br>
+      * A sound button clearly labelled and set as muted by default to meet accessibility.<br>
       * A sound button which label changes depending on the state of sound audio.
+
+      The sound button is shown below.
+
+![screenshot](docs/design/sound_btn.png)
+
+
 
 ## Other Testing Methods
 
